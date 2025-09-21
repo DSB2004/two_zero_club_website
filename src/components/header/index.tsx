@@ -19,7 +19,7 @@ export default function Header() {
   }, [open]);
   return (
     <>
-      <header className="max-w-[1800px] m-auto py-4 px-4 md:px-16  flex justify-between items-center">
+      <header className="max-w-[1800px] m-auto py-4 px-4 md:px-16 flex justify-between items-center">
         <Image
           src="/svg/logo.svg"
           alt="logo"
@@ -29,16 +29,28 @@ export default function Header() {
         ></Image>
 
         <div className="gap-10 items-center justify-center hidden md:flex">
-          <Link href="#" className="font-[area] text-[1rem] xl:text-[1.125rem]">
+          <Link
+            href="#"
+            className="font-[area] text-[0.85rem] xl:text-[1.125rem]"
+          >
             Wall Decor
           </Link>
-          <Link href="#" className="font-[area] text-[1rem] xl:text-[1.125rem]">
+          <Link
+            href="#"
+            className="font-[area] text-[0.85rem] xl:text-[1.125rem]"
+          >
             Home & Living
           </Link>
-          <Link href="#" className="font-[area] text-[1rem] xl:text-[1.125rem]">
+          <Link
+            href="#"
+            className="font-[area] text-[0.85rem] xl:text-[1.125rem]"
+          >
             Tech Accessories
           </Link>
-          <Link href="#" className="font-[area] text-[1rem] xl:text-[1.125rem]">
+          <Link
+            href="#"
+            className="font-[area] text-[0.85rem] xl:text-[1.125rem]"
+          >
             Clothing
           </Link>
         </div>
