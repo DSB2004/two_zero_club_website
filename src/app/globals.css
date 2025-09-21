@@ -41,6 +41,9 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --color-brown: #efe4d9;
+  --color-green: #ecf4ec;
+  --breakpoint-xs: 25rem;
 }
 
 :root {
@@ -119,4 +122,36 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@font-face {
+  font-family: "Area";
+  src: url("../assets/fonts/Area/Area-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Editorial";
+  src: url("../assets/fonts/Editorial/EditorialNew-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  gap: 1rem;
+  animation: marquee 20s linear infinite;
 }

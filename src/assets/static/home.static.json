@@ -1,0 +1,131 @@
+{
+  "collections": [
+    {
+      "thumbnail": "/images/collection-1.png",
+      "id": 1
+    },
+    {
+      "thumbnail": "/images/collection-2.png",
+      "id": 2
+    },
+    {
+      "thumbnail": "/images/collection-3.png",
+      "id": 3
+    },
+    {
+      "thumbnail": "/images/collection-4.png",
+      "id": 4
+    }
+  ],
+  "seenIn": [
+    {
+      "thumbnail": "/images/seen-1.png",
+      "id": 1
+    },
+    {
+      "thumbnail": "/images/seen-2.png",
+      "id": 2
+    },
+    {
+      "thumbnail": "/images/seen-3.png",
+      "id": 3
+    },
+    {
+      "thumbnail": "/images/seen-4.png",
+      "id": 4
+    },
+    {
+      "thumbnail": "/images/seen-5.png",
+      "id": 5
+    },
+    {
+      "thumbnail": "/images/seen-6.png",
+      "id": 6
+    }
+  ],
+  "shopBy": [
+    "Bauhaus",
+    "Pop Art",
+    "Matisse",
+    "Swiss Design",
+    "Scandinavian",
+    "Retro",
+    "Abstract",
+    "Whimsical",
+    "90s",
+    "Animals",
+    "Plants & Floral",
+    "Mid Century",
+    "Typography",
+    "Colorful",
+    "Bold",
+    "Cottage Core",
+    "Nature",
+    "70s",
+    "Food & Drinks",
+    "Stripes",
+    "Modern"
+  ],
+  "trending": [
+    {
+      "thumbnail": "/images/trending-1.png",
+      "title": "Summer Collection",
+      "description": "Discover our latest summer arrivals with fresh styles for every occasion.",
+      "id": 1
+    },
+    {
+      "thumbnail": "/images/trending-2.png",
+      "title": "Work Essentials",
+      "description": "Upgrade your daily wardrobe with our curated work-ready essentials.",
+      "id": 2
+    },
+    {
+      "thumbnail": "/images/trending-3.png",
+      "title": "Weekend Vibes",
+      "description": "Casual and comfy picks perfect for your laid-back weekends.",
+      "id": 3
+    },
+    {
+      "thumbnail": "/images/trending-4.png",
+      "title": "Exclusive Offers",
+      "description": "Shop limited-time deals and special discounts you don’t want to miss.",
+      "id": 4
+    }
+  ],
+  "newsletter": [
+    {
+      "thumbnail": "/images/trending-1.png",
+      "title": "Design Inspiration",
+      "description": "Get the latest tips and trends to elevate your home interiors with style and creativity.",
+      "buttonTitle": "Read More",
+      "id": 1
+    },
+    {
+      "thumbnail": "/images/trending-2.png",
+      "title": "Furniture Trends",
+      "description": "Discover modern furniture pieces and layout ideas that transform your living spaces.",
+      "buttonTitle": "Explore",
+      "id": 2
+    },
+    {
+      "thumbnail": "/images/trending-3.png",
+      "title": "Home Styling Tips",
+      "description": "Learn how to mix colors, textures, and décor elements for a stunning home aesthetic.",
+      "buttonTitle": "Learn More",
+      "id": 3
+    },
+    {
+      "thumbnail": "/images/trending-4.png",
+      "title": "DIY & Decor",
+      "description": "Explore creative DIY projects and décor hacks to personalize every corner of your home.",
+      "buttonTitle": "Discover",
+      "id": 4
+    }
+  ],
+  "testimony": {
+    "id": 1,
+    "logo": "/images/review-logo.png",
+    "review": "Very happy customer here - shipped & delivered exactly in the promised timeframe, great packaging that protected the art without going overboard.",
+    "rating": 4
+  }
+}
