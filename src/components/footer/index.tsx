@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-green pt-16 ">
@@ -27,7 +28,7 @@ export default function Footer() {
         <div className="flex flex-col gap-4 w-full sm:w-1/2 lg:w-1/4  p-4">
           <h2 className="font-[editorial] text-[1.625rem]">About Us</h2>
           <ul className="!p-0 text-[1.125rem]">
-            <li>Our Story</li>
+            <Link href="/about">Our Story</Link>
             <li>Journal</li>
           </ul>
         </div>

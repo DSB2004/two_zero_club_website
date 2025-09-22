@@ -1,12 +1,11 @@
 import React, { ReactNode } from "react";
+import Newsletter from "@/components/newsletter";
 
-import Banner from "@/components/banner";
 export default function layout({ children }: { children: ReactNode }) {
   return (
     <>
-      <Banner></Banner>
       {children}
-      {/* <Newsletter></Newsletter> */}
+      <Newsletter></Newsletter>
     </>
   );
 }
