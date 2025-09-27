@@ -2,7 +2,12 @@ import React from "react";
 import Image from "next/image";
 import StaticData from "@/assets/static/menu.static.json";
 
+import { useRouter } from "next/navigation";
 export default function WallDecor() {
+  const router = useRouter();
+  function handleClick(sub: string) {
+    router.push(`/Wall Decor/${sub}`);
+  }
   return (
     <>
       <div
@@ -12,17 +17,18 @@ export default function WallDecor() {
       opacity-0 transition-opacity duration-300
       pointer-events-none
       peer-hover:opacity-100 peer-hover:pointer-events-auto
-      group-hover:opacity-100 group-hover:pointer-events-auto
+      group-hover:opacity-100 group-hover:pointer-events-auto  rounded-bl-[1.5rem] rounded-br-[1.5rem]
     "
       >
         <div className=" w-full grid grid-cols-3 md:grid-cols-4 xl:grid-cols-5 min-h-96 gap-5 space-y-5">
           <div className="border-r border-black/50 ">
             <h2 className="text-[1.625rem] font-[editorial] mb-5">Featured</h2>
-            <ul className="pl-0 font-[area]">
-              <li>New</li>
-              <li>BestSeller</li>
-              <li>Trending</li>
-              <li>As Seen on Social</li>
+            <ul className="pl-0 font-[area] cursor-pointer">
+              {StaticData.featured.map((item, index) => (
+                <li key={item + index} onClick={() => handleClick(item)}>
+                  {item}
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -30,12 +36,14 @@ export default function WallDecor() {
             <h2 className="text-[1.625rem] font-[editorial] mb-5">
               Categories
             </h2>
-            <ul className="pl-0 font-[area]">
-              <li>Art Prints</li>
-              <li>Framed Prints </li>
-              <li>Posters Wall </li>
-              <li>Tapestries</li>
-              <li>Canvas</li>
+            <ul className="pl-0 font-[area] cursor-pointer">
+              <li onClick={() => handleClick("Art Prints")}>Art Prints</li>
+              <li onClick={() => handleClick("Framed Prints")}>
+                Framed Prints{" "}
+              </li>
+              <li onClick={() => handleClick("Posters Wall")}>Posters Wall </li>
+              <li onClick={() => handleClick("Tapestries")}>Tapestries</li>
+              <li onClick={() => handleClick("Canvas")}>Canvas</li>
             </ul>
           </div>
 
@@ -44,9 +52,10 @@ export default function WallDecor() {
               Shop by Color
             </h2>
             <h2 className="text-[14px] text-[#064BD6] mb-2">CLASSICS</h2>
-            <div className="grid grid-cols-4 gap-2 mb-4 place-items-start justify-center w-48">
+            <div className="grid grid-cols-4 gap-2 mb-4 place-items-start justify-center w-48 cursor-pointer">
               {StaticData.classic.map((color, index) => (
                 <div
+                  onClick={() => handleClick(color)}
                   key={color + "classic" + index}
                   className="w-10 h-[30px] rounded-full"
                   style={{ backgroundColor: color }}
@@ -54,9 +63,10 @@ export default function WallDecor() {
               ))}
             </div>
             <h2 className="text-[14px] text-[#FF004F] mb-2">TRENDING</h2>
-            <div className="grid grid-cols-4 gap-2 mb-4 w-48">
+            <div className="grid grid-cols-4 gap-2 mb-4 w-48 cursor-pointer">
               {StaticData.trending.map((color, index) => (
                 <div
+                  onClick={() => handleClick(color)}
                   key={color + "trending" + index}
                   className="w-10 h-[30px] rounded-full"
                   style={{ backgroundColor: color }}
@@ -65,12 +75,14 @@ export default function WallDecor() {
             </div>
           </div>
           <div className="">
-            <h2 className="text-[1.625rem] font-[editorial] mb-5">
+            <h2 className="text-[1.625rem] font-[editorial] mb-5 ">
               Shop by Subject
             </h2>
-            <ul className="pl-0 font-[area]">
+            <ul className="pl-0 font-[area] cursor-pointer">
               {StaticData.shop.map((item, index) => (
-                <li key={item + index}>{item}</li>
+                <li onClick={() => handleClick(item)} key={item + index}>
+                  {item}
+                </li>
               ))}
             </ul>
           </div>
