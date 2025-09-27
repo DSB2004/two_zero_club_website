@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
-
+import { useRouter } from "next/navigation";
 export default function Card(data: any) {
+  const router = useRouter();
   return (
-    <div className="w-full">
+    <div className="w-full" onClick={() => router.push(`/product/${data.handle}`)}>
       <div className="relative w-full pb-[150%] overflow-hidden rounded-lg">
         <Image
           src={data.thumbnail || "/images/card.png"}
