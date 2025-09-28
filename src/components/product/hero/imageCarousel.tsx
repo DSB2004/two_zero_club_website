@@ -17,7 +17,7 @@ export default function ImageCarousel({ data }: { data: any }) {
             src={ele.url}
             alt={"image"}
             width={1000}
-            className="w-full  rounded-md aspect-3/4"
+            className="w-full  rounded-md"
             height={1600}
           ></Image>
         ))}
@@ -32,7 +32,7 @@ export default function ImageCarousel({ data }: { data: any }) {
                 src={ele.url}
                 alt={"image"}
                 width={200}
-                className="w-full rounded-md aspect-3/4"
+                className="w-full rounded-md"
                 height={500}
               ></Image>
             </CarouselItem>
