@@ -12,7 +12,7 @@ import Description from "./description";
 export default function Intro({ data }: { data: Product }) {
   const { variant } = useProduct();
   return (
-    <div className="w-full md:w-2/5 flex gap-2 flex-col ">
+    <div className="w-full md:w-1/2 lg:w-2/6 flex gap-2 flex-col ">
       <Breadcrump></Breadcrump>
       <h1 className="font-[editorial] text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] leading-8">
         {data.title}

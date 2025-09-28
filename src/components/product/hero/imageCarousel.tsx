@@ -10,7 +10,7 @@ import {
 export default function ImageCarousel({ data }: { data: any }) {
   return (
     <>
-      <div className="w-3/5 hidden md:grid grid-cols-1 lg:grid-cols-2  max-h-[800px] overflow-y-auto no-scrollbar">
+      <div className="w-1/2 lg:w-4/6 hidden md:grid grid-cols-1 lg:grid-cols-2 max-h-[800px] overflow-y-auto no-scrollbar">
         {data.images.map((ele: any) => (
           <Image
             key={ele.altText}
