@@ -70,7 +70,7 @@ export default function Header() {
               <Clothing></Clothing>
             </div>
           </div>
-          <div className="flex items-center gap-2 justify-center">
+          <div className="flex items-center gap-3 justify-center">
             <Search></Search>
             <Cart></Cart>
             <Menu></Menu>

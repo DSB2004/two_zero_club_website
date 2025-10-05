@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 export default function Tech() {
   const router = useRouter();
   function handleClick(sub: string) {
-    router.push(`/Wall Decor/${sub}`);
+    router.push(`/Tech Accessories/${sub}`);
   }
   return (
     <>

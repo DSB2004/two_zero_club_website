@@ -17,6 +17,8 @@ export const getCollectionProducts = async ({
   first?: number;
   after?: string;
 }) => {
+  // const h = "trending-footer";
+  console.log(handle);
   const res = await shopifyFetch<ShopifyCollectionProductsOperation>({
     query: getCollectionProductsQuery,
     variables: {
@@ -29,6 +31,7 @@ export const getCollectionProducts = async ({
   });
 
   if (!res.body.data.collection) {
+    console.log(res.body.data.collection);
     console.warn(`No collection found for \`${handle}\``);
     return { products: [], pageInfo: { hasNextPage: false, endCursor: null } };
   }

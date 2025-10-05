@@ -33,7 +33,7 @@ export function QueryProvider({ children }: { children: ReactNode }) {
       persistQueryClient({
         queryClient,
         persister: localStoragePersister,
-        maxAge: 1000 * 60 * 15,
+        maxAge: 1000 * 60 * 5,
       });
 
       setIsHydrated(true);

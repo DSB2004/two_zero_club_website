@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 export default function Clothing() {
   const router = useRouter();
   function handleClick(sub: string) {
-    router.push(`/Wall Decor/${sub}`);
+    router.push(`/Clothing Lifestyle/${sub}`);
   }
   return (
     <>

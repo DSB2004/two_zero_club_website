@@ -59,7 +59,7 @@ const productFragment = /* GraphQL */ `
     collections(first: 1) {
       edges {
         node {
-          title
+          handle
         }
       }
     }

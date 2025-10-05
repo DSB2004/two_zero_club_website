@@ -7,11 +7,11 @@ export default function Footer() {
       <div className="max-w-[1800px] m-auto  px-10 sm:px-20 xl:px-32 flex justify-evenly items-start flex-wrap">
         <div className="flex flex-col gap-4 w-full sm:w-1/2 lg:w-1/4  p-4">
           <h2 className="font-[editorial] text-[1.625rem]">Shopping</h2>
-          <ul className="!p-0 text-[1.125rem]">
-            <li>New</li>
-            <li>BestSeller</li>
-            <li>Trending</li>
-            <li>As seen on Social</li>
+          <ul className="!p-0 text-[1.125rem] flex flex-col">
+            <Link href="/footer/New">New</Link>
+            <Link href="/footer/BestSellers">BestSellers</Link>
+            <Link href="/footer/Trending">Trending</Link>
+            <Link href="/footer/As seen on social">As seen on social</Link>
           </ul>
           <h2 className="mt-5 text-muted-foreground hidden xl:block">
             © 2025 Two Zero Club

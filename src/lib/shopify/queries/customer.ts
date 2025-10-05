@@ -24,6 +24,5 @@ export const getCustomerQuery = /* GraphQL */ `
       ...customerFields
     }
   }
-
   ${customerFragment}
 `;

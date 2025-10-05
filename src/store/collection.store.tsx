@@ -55,13 +55,10 @@ export const CollectionStore = ({
       const query = `${decodedSub
         .split(" ")
         .join("-")
-        .toLowerCase()}-${decodedCollection
-        .split(" ")
-        .join("-")
-        .toLowerCase()}`;
+        .toLowerCase()}${decodedCollection.split(" ").join("-").toLowerCase()}`;
 
       const res = await getCollectionProducts({
-        handle: "Test",
+        handle: query,
         first: 10,
         after: pageParam || pageCursor,
       });

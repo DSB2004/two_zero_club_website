@@ -21,7 +21,7 @@ export default function Card({
     >
       <div className="group relative w-full pb-[150%] overflow-hidden rounded-lg">
         <Image
-          src={images?.[0].url || thumbnail || "/images/card.png"}
+          src={images?.[0]?.url || thumbnail || "/images/card.png"}
           alt={title || "card"}
           fill
           className="object-cover transition-opacity duration-1000 ease-in-out group-hover:opacity-0"

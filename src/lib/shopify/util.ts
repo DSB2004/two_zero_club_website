@@ -1,29 +1,11 @@
 import { ReadonlyURLSearchParams } from "next/navigation";
 import {
   Cart,
-  Collection,
   Connection,
   Image,
-  Menu,
-  Page,
-  Product,
-  ShopifyAddToCartOperation,
   ShopifyCart,
-  ShopifyCartOperation,
-  ShopifyCollection,
-  ShopifyCollectionOperation,
-  ShopifyCollectionProductsOperation,
-  ShopifyCollectionsOperation,
   ShopifyCreateCartOperation,
-  ShopifyMenuOperation,
-  ShopifyPageOperation,
-  ShopifyPagesOperation,
-  ShopifyProduct,
-  ShopifyProductOperation,
-  ShopifyProductRecommendationsOperation,
-  ShopifyProductsOperation,
-  ShopifyRemoveFromCartOperation,
-  ShopifyUpdateCartOperation,
+
 } from "./types";
 
 import { shopifyFetch } from "@/lib/store-front";
@@ -89,11 +71,11 @@ export const reshapeProducts = (products: any[]) => {
     id: p.id,
     handle: p.handle,
     title: p.title,
-    thumbnail: p.featuredImage.url || "",
+    thumbnail: p.featuredImage?.url || "",
     description: p.description || "",
     price: p.priceRange?.minVariantPrice?.amount || "0",
     images: p.images.edges.map((edge: any) => edge.node),
-    collection: p.collections.edges[0].node.title,
+    collection: p.collections?.edges[0]?.node?.handle,
   }));
 };
 

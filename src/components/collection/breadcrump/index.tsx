@@ -12,8 +12,17 @@ export default function Breadcrumb() {
   const decodedSub = sub ? decodeURIComponent(sub.toString()) : "";
 
   return (
-    <h4 className="font-[area] text-[0.75rem] sm:text-[1rem] lg:text-[1.125rem] font-bold">
-      Home • {decodedCollection} • {decodedSub}
+    <h4 className="font-[area] text-[0.75rem] sm:text-[1rem] lg:text-[1.125rem] font-bold flex gap-2">
+      Home
+      <span
+        className={`capitalize ${
+          decodedCollection.toLowerCase() === "footer" ? "hidden" : "block"
+        }`}
+      >
+
+        • {decodedCollection}
+      </span>
+      <span className="capitalize"> • {decodedSub}</span>
     </h4>
   );
 }

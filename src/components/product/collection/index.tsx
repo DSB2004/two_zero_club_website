@@ -31,18 +31,34 @@ export default function Collection() {
       <h2 className="text-[2rem] sm:text-[2.25rem] lg:text-[2.75rem] font-[editorial] mb-5">
         {"Shop the full collection"}
       </h2>
-      <div className="hidden sm:grid grid-cols-1 min-[500px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5">
-        {products.slice(0, 5).map((ele) => {
-          return <Card {...ele} key={ele.id.toString()} />;
-        })}
-      </div>
 
-      <div
-        className="block sm:hidden
-     "
-      >
-        <CardCarousel></CardCarousel>
-      </div>
+      {products.length > 0 ? (
+        <div className="grid grid-cols-1 min-[500px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5">
+          {products.map((product) => (
+            <Card key={product.id} {...product} />
+          ))}
+          {isFetching && products && (
+            <>
+              <div className="hidden sm:grid grid-cols-1 min-[500px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5">
+                {products.slice(0, 5).map((ele) => {
+                  return <Card {...ele} key={ele.id.toString()} />;
+                })}
+              </div>
+
+              <div
+                className="block sm:hidden
+          "
+              >
+                <CardCarousel></CardCarousel>
+              </div>
+            </>
+          )}
+        </div>
+      ) : (
+        <div className="col-span-full text-center text-gray-foreground">
+          No products found.
+        </div>
+      )}
     </section>
   );
 }
