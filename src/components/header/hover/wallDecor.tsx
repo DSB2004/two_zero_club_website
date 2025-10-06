@@ -23,7 +23,7 @@ export default function WallDecor() {
         <div className=" w-full grid grid-cols-3 md:grid-cols-4 xl:grid-cols-5 min-h-96 gap-5 space-y-5">
           <div className="border-r border-black/50 ">
             <h2 className="text-[1.625rem] font-[editorial] mb-5">Featured</h2>
-            <ul className="pl-0 font-[area] cursor-pointer">
+            <ul className="pl-0 font-[area] cursor-pointer ">
               {StaticData.featured.map((item, index) => (
                 <li key={item + index} onClick={() => handleClick(item)}>
                   {item}
@@ -51,7 +51,9 @@ export default function WallDecor() {
             <h2 className="text-[1.625rem] font-[editorial] mb-5">
               Shop by Color
             </h2>
-            <h2 className="text-[14px] text-[#064BD6] mb-2">CLASSICS</h2>
+            <h2 className="text-[14px] font-bold text-[#064BD6] font-[area] mb-2">
+              CLASSICS
+            </h2>
             <div className="grid grid-cols-4 gap-2 mb-4 place-items-start justify-center w-48 cursor-pointer">
               {StaticData.classic.map((color, index) => (
                 <div
@@ -62,7 +64,9 @@ export default function WallDecor() {
                 ></div>
               ))}
             </div>
-            <h2 className="text-[14px] text-[#FF004F] mb-2">TRENDING</h2>
+            <h2 className="text-[14px] font-bold text-[#FF004F] font-[area] mb-2">
+              TRENDING
+            </h2>
             <div className="grid grid-cols-4 gap-2 mb-4 w-48 cursor-pointer">
               {StaticData.trending.map((color, index) => (
                 <div

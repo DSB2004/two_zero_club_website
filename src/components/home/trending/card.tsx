@@ -21,8 +21,9 @@ export default function TrendingCard(data: IPROPS) {
         alt={id.toString()}
         width="250"
         height={0}
-        className="w-full "
+        className="w-full mb-[1.625rem]"
       ></Image>
+
       <h2 className="font-[area] text-[1.25rem] sm:text-[1.5rem] font-bold">
         {title}
       </h2>
@@ -31,7 +32,7 @@ export default function TrendingCard(data: IPROPS) {
       </p>
       <Button
         style={{ backgroundColor: colors[(id - 1) % colors.length] }}
-        className=" w-fit rounded-full p-6 text-white font-[area]"
+        className="mt-[1.25rem] !h-[44px] px-[20px] py-[10px] w-fit rounded-full  text-white font-[area]"
       >
         Add to basket
       </Button>

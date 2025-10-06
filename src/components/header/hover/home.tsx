@@ -36,7 +36,9 @@ export default function Home() {
             <h2 className="text-[1.625rem] font-[editorial] mb-5">
               Categories
             </h2>
-            <h2 className="text-[14px] text-[#F33C14]">LIVING ROOM</h2>
+            <h2 className="text-[14px] font-bold  font-[area] text-[#F33C14]">
+              LIVING ROOM
+            </h2>
             <ul className="pl-0 font-[area] cursor-pointer">
               <li onClick={() => handleClick("Rugs")}>Rugs</li>
               <li onClick={() => handleClick("Throw Blankets")}>
@@ -48,14 +50,18 @@ export default function Home() {
               <li onClick={() => handleClick("Wall Clocks")}>Wall Clocks </li>
               <li onClick={() => handleClick("Tapestries")}>Tapestries</li>
             </ul>
-            <h2 className="text-[14px] text-[#08814E]">BEDROOM</h2>
+            <h2 className="text-[14px] font-bold  font-[area] text-[#08814E]">
+              BEDROOM
+            </h2>
             <ul className="pl-0 font-[area]">
               <li onClick={() => handleClick("Duvet Covers")}>Duvet Covers</li>
               <li onClick={() => handleClick("Pillow Covers")}>
                 Pillow Covers
               </li>
             </ul>
-            <h2 className="text-[14px] text-[#064BD6]">BATHROOM</h2>
+            <h2 className="text-[14px] font-bold  font-[area] text-[#064BD6]">
+              BATHROOM
+            </h2>
             <ul className="pl-0 font-[area]">
               <li onClick={() => handleClick("Bath Mats")}>Bath Mats</li>
               <li onClick={() => handleClick("Towels")}>Towels </li>
@@ -69,7 +75,9 @@ export default function Home() {
             <h2 className="text-[1.625rem] font-[editorial] mb-5">
               Shop by Color
             </h2>
-            <h2 className="text-[14px] text-[#064BD6] mb-2">CLASSICS</h2>
+            <h2 className="text-[14px] font-bold text-[#064BD6] font-[area] mb-2">
+              CLASSICS
+            </h2>
             <div className="grid grid-cols-4 gap-2 mb-4 place-items-start justify-center w-48 cursor-pointer">
               {StaticData.classic.map((color, index) => (
                 <div
@@ -80,7 +88,9 @@ export default function Home() {
                 ></div>
               ))}
             </div>
-            <h2 className="text-[14px] text-[#FF004F] mb-2">TRENDING</h2>
+            <h2 className="text-[14px] font-bold text-[#FF004F] font-[area] mb-2">
+              TRENDING
+            </h2>
             <div className="grid grid-cols-4 gap-2 mb-4 w-48 cursor-pointer">
               {StaticData.trending.map((color, index) => (
                 <div

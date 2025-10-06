@@ -10,23 +10,21 @@ export default function Customer() {
   return (
     <>
       {isLoading || isFetching ? (
-        <></>
+        <>
+          <User className=" w-5 h-5 xs:w-7 xs:h-7 text-muted-foreground"></User>
+        </>
       ) : (
         <>
-          {!customer ? (
-            <>
-              <Button
-                disabled={isLoading || isFetching}
-                onClick={() => push("/auth/login")}
-              >
-                Login
-              </Button>
-            </>
-          ) : (
-            <>
-              <User className=" w-5 h-5 xs:w-7 xs:h-7"></User>
-            </>
-          )}
+          <User
+            className=" w-5 h-5 xs:w-7 xs:h-7"
+            onClick={() => {
+              if (!customer) {
+                push("/auth/login");
+              } else {
+                //
+              }
+            }}
+          ></User>
         </>
       )}
     </>

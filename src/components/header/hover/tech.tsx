@@ -47,7 +47,9 @@ export default function Tech() {
             <h2 className="text-[1.625rem] font-[editorial] mb-5">
               Shop by Color
             </h2>
-            <h2 className="text-[14px] text-[#064BD6] mb-2">CLASSICS</h2>
+            <h2 className="text-[14px] font-bold text-[#064BD6] font-[area] mb-2">
+              CLASSICS
+            </h2>
             <div className="grid grid-cols-4 gap-2 mb-4 place-items-start justify-center w-48 cursor-pointer">
               {StaticData.classic.map((color, index) => (
                 <div
@@ -58,7 +60,9 @@ export default function Tech() {
                 ></div>
               ))}
             </div>
-            <h2 className="text-[14px] text-[#FF004F] mb-2">TRENDING</h2>
+            <h2 className="text-[14px] font-bold text-[#FF004F] font-[area] mb-2">
+              TRENDING
+            </h2>
             <div className="grid grid-cols-4 gap-2 mb-4 w-48 cursor-pointer">
               {StaticData.trending.map((color, index) => (
                 <div

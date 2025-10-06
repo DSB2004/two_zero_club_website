@@ -20,7 +20,7 @@ export default function Card({
         router.push(`/product/${handle}?id=${id}&collection=${collection}`)
       }
     >
-      <div className="group relative w-full pb-[150%] overflow-hidden rounded-lg">
+      <div className="group relative w-full pb-[150%] overflow-hidden rounded-lg mb-[1.625rem] ">
         <Image
           src={images?.[0]?.url || thumbnail || "/images/card.png"}
           alt={title || "card"}
@@ -38,7 +38,7 @@ export default function Card({
         )}
       </div>
 
-      <h2 className="text-[1.5rem] font-[area] mt-10 font-bold">{title}</h2>
+      <h2 className="text-[1.5rem] font-[area] font-bold">{title}</h2>
       <p className="text-[1.125rem] font-[area] font-light">From ${price}</p>
     </div>
   );
