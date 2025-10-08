@@ -28,6 +28,7 @@ const ProductContext = createContext<ProductProviderInterface | null>(null);
 
 export function ProductProvider({ children }: { children: ReactNode }) {
   const { product } = useProductStore();
+  console.log(product);
   const [quantity, setQuantity] = useState(1);
   const [variant, setVariant] = useState<ProductVariant | null>(null);
   const [options, setOptions] = useState<{ name: string; values: string[] }[]>(

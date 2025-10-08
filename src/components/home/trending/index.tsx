@@ -3,9 +3,8 @@ import StaticData from "@/assets/static/home.static.json";
 import TrendingCard from "./card";
 import CardCarousel from "./carousel";
 export default function Trending() {
-  
   return (
-    <section className="max-w-[1800px] px-4 md:px-16  w-full m-auto my-20">
+    <section className="max-w-[1800px] px-4 lg:px-16  w-full m-auto my-20">
       <h2 className="text-[2rem] sm:text-[2.25rem] lg:text-[2.75rem] font-[editorial] mb-5">
         {"What's Trending"}
       </h2>

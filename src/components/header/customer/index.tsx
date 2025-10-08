@@ -3,7 +3,8 @@ import React from "react";
 import { useCustomerStore } from "@/store/customer.store";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
-import { Loader, User } from "lucide-react";
+import { Loader } from "lucide-react";
+import UserIcon from "../icons/user";
 export default function Customer() {
   const { push } = useRouter();
   const { customer, isLoading, isFetching } = useCustomerStore();
@@ -11,11 +12,11 @@ export default function Customer() {
     <>
       {isLoading || isFetching ? (
         <>
-          <User className=" w-5 h-5 xs:w-7 xs:h-7 text-muted-foreground"></User>
+          <UserIcon className=" w-5 h-5 xs:w-7 xs:h-7 text-muted-foreground"></UserIcon>
         </>
       ) : (
         <>
-          <User
+          <UserIcon
             className=" w-5 h-5 xs:w-7 xs:h-7"
             onClick={() => {
               if (!customer) {
@@ -24,7 +25,7 @@ export default function Customer() {
                 //
               }
             }}
-          ></User>
+          ></UserIcon>
         </>
       )}
     </>

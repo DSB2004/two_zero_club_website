@@ -1,7 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { Search, User, ShoppingCart, X } from "lucide-react";
+import { User, X } from "lucide-react";
+import CartIcon from "../icons/cart";
+import SearchIcon from "../icons/search";
 import Customer from "../customer";
 import { useCart } from "@/provider/cart.provider";
 import { useCartStore } from "@/store/cart.store";
@@ -15,7 +17,7 @@ export default function MenuHeader({
   const { cart } = useCartStore();
 
   return (
-    <header className="bg-white w-full py-4 px-4 flex justify-between items-center">
+    <header className="bg-white w-full py-4 px-4 lg:px-16 flex justify-between items-center">
       <Image
         onClick={() => router.push("/")}
         src="/svg/logo.svg"
@@ -26,15 +28,15 @@ export default function MenuHeader({
       ></Image>
 
       <div className="flex items-center gap-3 justify-center">
-        <Search className="w-5 h-5 xs:w-7 xs:h-7 cursor-pointer"></Search>
+        <SearchIcon className="w-5 h-5 xs:w-7 xs:h-7 cursor-pointer"></SearchIcon>
         <span className="relative cursor-pointer">
-          <ShoppingCart
+          <CartIcon
             className="w-5 h-5 xs:w-7 xs:h-7 cursor-pointer"
             onClick={() => {
               close(false);
               toggle((val) => !val);
             }}
-          ></ShoppingCart>
+          ></CartIcon>
           {!cart || cart.lines.length === 0 ? (
             <></>
           ) : (

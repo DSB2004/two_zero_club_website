@@ -57,10 +57,10 @@ export default function WallDecor() {
             <div className="grid grid-cols-4 gap-2 mb-4 place-items-start justify-center w-48 cursor-pointer">
               {StaticData.classic.map((color, index) => (
                 <div
-                  onClick={() => handleClick(color)}
+                  onClick={() => handleClick(color.label)}
+                  style={{ backgroundColor: color.color }}
                   key={color + "classic" + index}
                   className="w-10 h-[30px] rounded-full"
-                  style={{ backgroundColor: color }}
                 ></div>
               ))}
             </div>
@@ -70,10 +70,10 @@ export default function WallDecor() {
             <div className="grid grid-cols-4 gap-2 mb-4 w-48 cursor-pointer">
               {StaticData.trending.map((color, index) => (
                 <div
-                  onClick={() => handleClick(color)}
+                  onClick={() => handleClick(color.label)}
+                  style={{ backgroundColor: color.color }}
                   key={color + "trending" + index}
                   className="w-10 h-[30px] rounded-full"
-                  style={{ backgroundColor: color }}
                 ></div>
               ))}
             </div>

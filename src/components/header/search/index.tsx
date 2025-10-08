@@ -1,7 +1,8 @@
 import React, { useState, useEffect, FormEvent } from "react";
 import { Input } from "@/components/ui/input";
-import { SearchIcon, X } from "lucide-react";
+import { X } from "lucide-react";
 import { useRouter } from "next/navigation";
+import SearchIcon from "../icons/search";
 export default function Search() {
   const [open, toggle] = useState(false);
   const router = useRouter();

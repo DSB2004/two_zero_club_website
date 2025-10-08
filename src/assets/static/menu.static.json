@@ -1,31 +1,43 @@
 {
   "classic": [
-    "#F33C14",
-    "#FFC107",
-    "#064BD6",
-    "#08814E",
-    "#7ABAD1",
-    "#EB9501",
-    "#EFE4D9",
-    "#EBC6AC",
-    "#FE7E93",
-    "#1C1714",
-    "#8BB25D",
-    "#B9B9F5",
-    "#C1D329",
-    "#A86187",
-    "#A86187",
-    "#32A497"
+    { "color": "#F33C14", "label": "Scarlet Red" },
+    { "color": "#FFC107", "label": "Canary Yellow" },
+    { "color": "#064BD6", "label": "French Blue" },
+    { "color": "#08814E", "label": "Pine Green" },
+    { "color": "#7ABAD1", "label": "Ice Blue" },
+    { "color": "#EB9501", "label": "Tiger Orange" },
+    { "color": "#EFE4D9", "label": "Ivory" },
+    { "color": "#EBC6AC", "label": "Oatmilk" },
+    { "color": "#FE7E93", "label": "Candy Pink" },
+    { "color": "#1C1714", "label": "Ink Black" },
+    { "color": "#1C1714", "label": "Lime Green" },
+    { "color": "#B9B9F5", "label": "Lavender" },
+    { "color": "#32A497", "label": "Aqua" },
+    { "color": "#FF7763", "label": "Coral" },
+    { "color": "#A86187", "label": "Plum" },
+    { "color": "#C1D329", "label": "Electric Green" }
   ],
   "trending": [
-    "#FFFD88",
-    "#6F2228",
-    "#4F3265",
-    "#B6ABD4",
-    "#1D3C9F",
-    "#6F764C",
-    "#6F764C",
-    "#6F764C"
+    { "color": "#FFFD88", "label": "Butter Cream" },
+    {
+      "color": "#6F2228",
+      "label": "Rockwood"
+    },
+    { "color": "#4F3265", "label": "Nightmoth" },
+    {
+      "color": "#B6ABD4",
+      "label": "Dusty Lilac"
+    },
+    { "color": "#1D3C9F", "label": "True Blue" },
+    {
+      "color": "#6F764C",
+      "label": "Palm Deco"
+    },
+    { "color": "#846D5E", "label": "Sequoia" },
+    {
+      "color": "#A1353C",
+      "label": "Read Clay"
+    }
   ],
   "featured": ["New", "Bestsellers", "Trending", "As Seen on Social"],
   "shop": [

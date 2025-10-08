@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 export default function Hero() {
   const { push } = useRouter();
   return (
-    <section className="max-w-[1800px] mt-10 md:mt-20 lg:mt-5 px-4 md:px-16 my-10 gap-5 m-auto flex justify-between items-center flex-col-reverse md:flex-row">
+    <section className="max-w-[1800px] mt-10 md:mt-20 lg:mt-5 px-4 lg:px-16 my-10 gap-5 m-auto flex justify-between items-center flex-col-reverse md:flex-row">
       <div className="w-full lg:w-[600px]  flex flex-col gap-4   lg:mr-0">
         <h2 className="text-[3rem] sm:text-[4rem] font-[editorial] leading-15 md:leading-18">
           Art for Inspiring Spaces

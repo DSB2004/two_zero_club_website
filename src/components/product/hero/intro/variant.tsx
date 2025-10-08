@@ -12,6 +12,7 @@ import { useProduct } from "@/provider/product.provider";
 
 export default function Variant() {
   const { options, selectVariant } = useProduct();
+  console.log(options);
   const [selectedOptions, setSelectedOptions] = useState<
     Record<string, string>
   >({});

@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <>
       <header className="sticky top-0 bg-white z-[4000]  ">
-        <div className="max-w-[1800px] m-auto py-4 px-4 md:px-16 flex justify-between items-center">
+        <div className="max-w-[1800px] m-auto py-4 px-4 lg:px-16 flex justify-between items-center">
           <Image
             onClick={() => router.push("/")}
             src="/svg/logo.svg"
@@ -29,10 +29,10 @@ export default function Header() {
             className=" w-16 xs:w-20 lg:w-26 "
           ></Image>
 
-          <div className="lg:gap-10 gap-5 items-center justify-center hidden md:flex">
+          <div className="lg:gap-10 gap-5 items-center justify-center hidden lg:flex">
             <div className="relative inline-block group  py-5">
               <Link
-                href="#"
+                href="/Wall Decor/New"
                 className="peer  px-[14px] transition-all duration-200 lg:px-2 py-[6px] rounded-full font-[area] text-[0.8rem] xl:text-[1.125rem] border border-transparent box-border group-hover:border-black"
               >
                 Wall Decor
@@ -43,7 +43,7 @@ export default function Header() {
 
             <div className="relative inline-block group  py-5">
               <Link
-                href="#"
+                href="/Home Living/New"
                 className="peer  px-[14px] transition-all duration-200 lg:px-2 py-[6px] rounded-full font-[area] text-[0.8rem] xl:text-[1.125rem] border border-transparent box-border group-hover:border-black"
               >
                 Home & Living
@@ -53,7 +53,7 @@ export default function Header() {
             </div>
             <div className="relative inline-block group  py-5">
               <Link
-                href="#"
+                href="/Tech Accessories/New"
                 className="peer  px-[14px] transition-all duration-200 lg:px-2 py-[6px] rounded-full font-[area] text-[0.8rem] xl:text-[1.125rem] border border-transparent box-border group-hover:border-black"
               >
                 Tech & Accessories
@@ -63,10 +63,10 @@ export default function Header() {
             </div>
             <div className="relative inline-block group  py-5">
               <Link
-                href="#"
+                href="/Clothing Lifestyle/New"
                 className="peer  px-[14px] transition-all duration-200 lg:px-2 py-[6px] rounded-full font-[area] text-[0.8rem] xl:text-[1.125rem] border border-transparent box-border group-hover:border-black"
               >
-                Clothing 
+                Clothing
               </Link>
 
               <Clothing></Clothing>
@@ -74,8 +74,8 @@ export default function Header() {
           </div>
           <div className="flex items-center gap-3 justify-center">
             <Search></Search>
-            <Cart></Cart>
             <Customer></Customer>
+            <Cart></Cart>
             <Menu></Menu>
           </div>
         </div>

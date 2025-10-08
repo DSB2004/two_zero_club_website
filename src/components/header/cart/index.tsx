@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { useCartStore } from "@/store/cart.store";
-import { ShoppingCart } from "lucide-react";
 import { useCart } from "@/provider/cart.provider";
 import CartGrid from "./grid";
 import Loading from "./loading";
 import Empty from "./empty";
 import Checkout from "./checkout";
 import { X } from "lucide-react";
+import CartIcon from "../icons/cart";
 export default function Cart() {
   const { open, setOpen: toggle } = useCart();
   const { cart } = useCartStore();
@@ -25,10 +25,10 @@ export default function Cart() {
   return (
     <>
       <span className="relative cursor-pointer">
-        <ShoppingCart
+        <CartIcon
           className="  w-5 h-5 xs:w-7 xs:h-7"
           onClick={() => toggle((val) => !val)}
-        ></ShoppingCart>
+        ></CartIcon>
         {!cart || cart.lines.length === 0 ? (
           <></>
         ) : (

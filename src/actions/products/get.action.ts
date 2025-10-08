@@ -12,5 +12,6 @@ export async function getProduct(handle: string): Promise<Product | undefined> {
     },
   });
 
+  
   return reshapeProduct(res.body.data.product, false);
 }

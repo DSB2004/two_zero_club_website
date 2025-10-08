@@ -17,10 +17,10 @@ export default function ShopByColor({
       <div className="grid grid-cols-7 min-[350px]:grid-cols-8 min-[550px]:grid-cols-10 min-[650px]:grid-cols-14  gap-2 mb-4 place-items-start justify-center  cursor-pointer">
         {StaticData.classic.map((color, index) => (
           <div
-            onClick={() => click(color)}
+            onClick={() => click(color.label)}
             key={color + "classic" + index}
             className="py-[10px] w-[30px] rounded-[1.5rem] col-span-1"
-            style={{ backgroundColor: color }}
+            style={{ backgroundColor: color.color }}
           ></div>
         ))}
       </div>
@@ -30,10 +30,10 @@ export default function ShopByColor({
       <div className="grid grid-cols-7 min-[350px]:grid-cols-8 min-[550px]:grid-cols-12 min-[650px]:grid-cols-14  gap-2 mb-4 cursor-pointer place-items-start justify-center">
         {StaticData.trending.map((color, index) => (
           <div
-            onClick={() => click(color)}
+            onClick={() => click(color.label)}
             key={color + "trending" + index}
             className="py-[10px] w-[30px] rounded-[1.5rem] col-span-1"
-            style={{ backgroundColor: color }}
+            style={{ backgroundColor: color.color }}
           ></div>
         ))}
       </div>

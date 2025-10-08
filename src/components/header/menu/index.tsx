@@ -25,11 +25,11 @@ export default function Menu() {
   return (
     <>
       <MenuIcon
-        className=" block md:hidden w-5 h-5 xs:w-7 xs:h-7"
+        className=" block lg:hidden w-5 h-5 xs:w-7 xs:h-7"
         onClick={() => toggle((val) => !val)}
       ></MenuIcon>
       <aside
-        className={`block md:hidden fixed transition-all duration-200 top-0 left-0 bg-green shadow-2xl w-full z-[1000] overflow-hidden  ${
+        className={`block lg:hidden fixed transition-all duration-200 top-0 left-0 bg-green shadow-2xl w-full z-[1000] overflow-hidden  ${
           open ? "max-h-screen" : "max-h-0"
         }`}
       >
