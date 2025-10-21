@@ -46,14 +46,6 @@ export default function Menu() {
           </div>
         </div>
       </aside>
-      <div
-        onClick={() => toggle(false)}
-        className={`
-          ${open ? "fixed" : "hidden"}
-        md:hidden
-         bg-[#00000050] absolute top-0 left-0 z-[999] h-screen w-screen
-        `}
-      ></div>
     </>
   );
 }

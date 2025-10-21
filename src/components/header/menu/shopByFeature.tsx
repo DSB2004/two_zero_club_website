@@ -12,7 +12,7 @@ export default function ShopByFeature() {
           New
         </Link>
         <Link
-          href="/footer/New"
+          href="/footer/Trending"
           className="text-[1rem] font-[area] font-extrabold "
         >
           Trending
