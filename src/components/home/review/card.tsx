@@ -17,8 +17,8 @@ export default function ReviewCard(data: IPROPS) {
       <Image
         src="/images/review.png"
         alt={id.toString()}
-        width="650"
-        height="850"
+        width="850"
+        height="1450"
         className=""
       ></Image>
       <div className="flex flex-col items-center gap-2">
