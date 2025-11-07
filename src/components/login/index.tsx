@@ -15,9 +15,7 @@ export default function Login() {
         <Link href={"/auth/signup"} className="font-[area] ">
           Don't have an Account! <strong>Click here</strong>
         </Link>
-        <Link href={"/auth/forget"} className="font-[area] ">
-          Forget Password! <strong>Click here</strong>
-        </Link>
+      
       </div>
     </div>
   );

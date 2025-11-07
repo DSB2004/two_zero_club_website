@@ -26,7 +26,7 @@ export default function Cart() {
     <>
       <span className="relative cursor-pointer">
         <CartIcon
-          className="  w-5 h-5 xs:w-7 xs:h-7"
+          className=" w-5 h-5 xs:w-7 xs:h-7"
           onClick={() => toggle((val) => !val)}
         ></CartIcon>
         {!cart || cart.lines.length === 0 ? (

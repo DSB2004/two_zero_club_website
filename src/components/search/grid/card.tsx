@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { useRouter, useParams } from "next/navigation";
+import { useRouter, useParams, useSearchParams } from "next/navigation";
 
 export default function Card({
   handle,
@@ -12,11 +12,15 @@ export default function Card({
   collection,
 }: any) {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const query = searchParams.get("q");
   return (
     <div
       className="w-full cursor-pointer"
       onClick={() =>
-        router.push(`/product/${handle}?id=${id}&collection=${collection}`)
+        router.push(
+          `/product/${handle}?id=${id}&collection=Search&sub=${query}`
+        )
       }
     >
       <div className="group relative w-full pb-[150%] overflow-hidden rounded-lg">

@@ -15,11 +15,11 @@ export default function Newsletter() {
           className="lg:w-[600px] w-full"
         ></Image>
 
-        <div className="w-full lg:w-[600px] space-y-3">
-          <h2 className="text-4xl xl:text-[2.75rem] leading-12 font-[editorial] ">
+        <div className="w-full lg:w-[600px] space-y-2">
+          <h2 className="text-4xl xl:text-[2.75rem] leading-4xl xl:leading-[2.75rem] font-[editorial] ">
             Get updates, offers & special invites.
           </h2>
-          <p className="text-lg xl:text-[1.2rem] font-[area]">
+          <p className="text-lg xl:text-[1.2rem] font-[area] leading-[120%]">
             Join our newsletter & get 20% off your first order.
           </p>
           <NewsletterForm></NewsletterForm>

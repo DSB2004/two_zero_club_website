@@ -8,7 +8,7 @@ export default function Grid() {
         Shop by Collection
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
-        <div className="col-span-1 border h-96  rounded-[10px] relative overflow-hidden">
+        <div className="col-span-1 border h-[450px]  rounded-[10px] relative overflow-hidden">
           <Image
             src="/images/grid-1.png"
             alt="grid-1"
@@ -17,7 +17,7 @@ export default function Grid() {
           />
         </div>
 
-        <div className="col-span-1 md:col-span-2 border h-96  rounded-[10px] relative overflow-hidden">
+        <div className="col-span-1 md:col-span-2 border h-[450px]  rounded-[10px] relative overflow-hidden">
           <Image
             src="/images/grid-2.png"
             alt="grid-2"
@@ -26,7 +26,7 @@ export default function Grid() {
           />
         </div>
 
-        <div className="col-span-1 md:col-span-2 border h-96  rounded-[10px] relative overflow-hidden">
+        <div className="col-span-1 md:col-span-2 border h-[450px]  rounded-[10px] relative overflow-hidden">
           <Image
             src="/images/grid-3.png"
             alt="grid-3"
@@ -35,7 +35,7 @@ export default function Grid() {
           />
         </div>
 
-        <div className="col-span-1 border h-96  rounded-[10px] relative overflow-hidden">
+        <div className="col-span-1 border h-[450px]  rounded-[10px] relative overflow-hidden">
           <Image
             src="/images/grid-4.png"
             alt="grid-4"

@@ -38,7 +38,9 @@ export default function Card({
       </div>
 
       <h2 className="text-[1.5rem] font-[area]  font-bold">{title}</h2>
-      <p className="text-[1.125rem] font-[area] font-light">From ${price}</p>
+      <p className="text-[1.125rem] font-[area] font-light mt-1">
+        From ${price}
+      </p>
     </div>
   );
 }

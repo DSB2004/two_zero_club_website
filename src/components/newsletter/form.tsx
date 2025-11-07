@@ -47,7 +47,7 @@ export default function NewsletterForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="flex items-center gap-2 w-full"
+        className="flex items-center gap-1 w-full "
       >
         <FormField
           control={form.control}
@@ -57,7 +57,7 @@ export default function NewsletterForm() {
               <FormControl>
                 <Input
                   placeholder="Enter your email address ..."
-                  className="!py-[10px] !px-[30px] w-full sm:w-[400px] bg-[rgba(0,0,0,0.05)] rounded-full outline-none ring-0 focus:ring-0 focus:outline-none focus-within:ring-0 focus-within:outline-none"
+                  className="!p-[10px] !pl-[20px] w-full sm:w-[400px] bg-[rgba(0,0,0,0.05)] rounded-full outline-none ring-0 focus:ring-0 focus:outline-none focus-within:ring-0 focus-within:outline-none placeholder:text-[#00000040]"
                   {...field}
                 />
               </FormControl>

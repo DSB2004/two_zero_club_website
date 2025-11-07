@@ -10,13 +10,13 @@ import {
 export default function ImageCarousel({ data }: { data: any }) {
   return (
     <>
-      <div className="w-1/2 lg:w-4/6 hidden md:grid grid-cols-1 lg:grid-cols-2">
+      <div className="w-1/2 xl:w-3/4 hidden md:grid grid-cols-1 xl:grid-cols-2">
         {data.images.map((ele: any) => (
           <Image
             key={ele.altText}
             src={ele.url}
             alt={"image"}
-            width={1000}
+            width={4000}
             className="w-full  rounded-md"
             height={1600}
           ></Image>

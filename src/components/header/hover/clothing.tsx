@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
+import List from "../../common/list";
 import StaticData from "@/assets/static/menu.static.json";
 import { useRouter } from "next/navigation";
 export default function Clothing() {
@@ -25,9 +25,13 @@ export default function Clothing() {
             <h2 className="text-[1.625rem] font-[editorial] mb-5">Featured</h2>
             <ul className="pl-0 font-[area] cursor-pointer">
               {StaticData.featured.map((item, index) => (
-                <li key={item + index} onClick={() => handleClick(item)}>
+                <List
+                  className=""
+                  key={item + index}
+                  onClick={() => handleClick(item)}
+                >
                   {item}
-                </li>
+                </List>
               ))}
             </ul>
           </div>
@@ -40,26 +44,32 @@ export default function Clothing() {
               CLOTHING
             </h2>
             <ul className="pl-0 font-[area] cursor-pointer">
-              <li onClick={() => handleClick("Hoodies")}>Hoodies</li>
-              <li onClick={() => handleClick("Sweatshirts")}>Sweatshirts </li>
-              <li onClick={() => handleClick("Short Sleeve Tees")}>
+              <List onClick={() => handleClick("Hoodies")}>Hoodies</List>
+              <List onClick={() => handleClick("Sweatshirts")}>
+                Sweatshirts{" "}
+              </List>
+              <List onClick={() => handleClick("Short Sleeve Tees")}>
                 Short Sleeve Tees
-              </li>
-              <li onClick={() => handleClick("Long Sleeve Tees")}>
+              </List>
+              <List onClick={() => handleClick("Long Sleeve Tees")}>
                 Long Sleeve Tees
-              </li>
+              </List>
             </ul>
             <h2 className="text-[14px] font-bold  font-[area] text-[#08814E]">
               LIFESTYLE
             </h2>
             <ul className="pl-0 font-[area] cursor-pointer">
-              <li onClick={() => handleClick("Beach Towels")}>Beach Towels</li>
-              <li onClick={() => handleClick("Travel Mugs")}>Travel Mugs</li>
-              <li onClick={() => handleClick("Water Bottles")}>
+              <List onClick={() => handleClick("Beach Towels")}>
+                Beach Towels
+              </List>
+              <List onClick={() => handleClick("Travel Mugs")}>
+                Travel Mugs
+              </List>
+              <List onClick={() => handleClick("Water Bottles")}>
                 Water Bottles
-              </li>
-              <li onClick={() => handleClick("Tote Bags")}>Tote Bags</li>
-              <li onClick={() => handleClick("Pouches")}>Pouches</li>
+              </List>
+              <List onClick={() => handleClick("Tote Bags")}>Tote Bags</List>
+              <List onClick={() => handleClick("Pouches")}>Pouches</List>
             </ul>
           </div>
 
@@ -70,26 +80,26 @@ export default function Clothing() {
             <h2 className="text-[14px] font-bold text-[#064BD6] font-[area] mb-2">
               CLASSICS
             </h2>
-            <div className="grid grid-cols-4 gap-2 mb-4  place-items-start justify-center w-48 cursor-pointer">
+            <div className="grid grid-cols-4 gap-1 mb-4  place-items-start justify-center w-48 cursor-pointer">
               {StaticData.classic.map((color, index) => (
                 <div
                   onClick={() => handleClick(color.label)}
                   style={{ backgroundColor: color.color }}
                   key={color + "classic" + index}
-                  className="w-10 h-[30px] rounded-full"
+                  className="w-full h-[30px] rounded-full"
                 ></div>
               ))}
             </div>
             <h2 className="text-[14px] font-bold  font-[area] text-[#FF004F]  mb-2">
               TRENDING
             </h2>
-            <div className="grid grid-cols-4 gap-2 mb-4 w-48 cursor-pointer">
+            <div className="grid grid-cols-4 gap-1 mb-4 w-48 cursor-pointer">
               {StaticData.trending.map((color, index) => (
                 <div
                   onClick={() => handleClick(color.label)}
                   style={{ backgroundColor: color.color }}
                   key={color + "trending" + index}
-                  className="w-10 h-[30px] rounded-full"
+                  className="w-full h-[30px] rounded-full"
                 ></div>
               ))}
             </div>
@@ -100,9 +110,9 @@ export default function Clothing() {
             </h2>
             <ul className="pl-0 font-[area] cursor-pointer">
               {StaticData.shop.map((item, index) => (
-                <li onClick={() => handleClick(item)} key={item + index}>
+                <List onClick={() => handleClick(item)} key={item + index}>
                   {item}
-                </li>
+                </List>
               ))}
             </ul>
           </div>

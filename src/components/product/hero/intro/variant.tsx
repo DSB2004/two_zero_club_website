@@ -42,7 +42,7 @@ export default function Variant() {
   };
 
   return (
-    <div className="space-y-4 mt-3">
+    <div className="space-y-2 mt-2">
       {options.map((ele) => (
         <div key={ele.name}>
           <h4 className="font-[area] text-[0.875rem] text-black/50 uppercase mb-1">

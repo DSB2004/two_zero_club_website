@@ -13,10 +13,10 @@ export default function Intro({ data }: { data: Product }) {
   const { variant } = useProduct();
 
   return (
-    <div className="static top-0 md:sticky md:top-[110px] w-full md:w-1/2 lg:w-2/6 self-start">
-      <div className="  flex gap-2 flex-col ">
-        <Breadcrump {...data}></Breadcrump>
-        <h1 className="font-[editorial] text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] leading-8">
+    <div className="static top-0 md:sticky md:top-[110px] w-full md:w-1/2 xl:w-1/4 self-start">
+      <div className="  flex gap-1 flex-col ">
+        <Breadcrump></Breadcrump>
+        <h1 className="font-[editorial] text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] leading-[34px]">
           {data.title}
         </h1>
         <Price data={data}></Price>
@@ -26,17 +26,19 @@ export default function Intro({ data }: { data: Product }) {
           <>
             {variant.availableForSale ? (
               <>
-                <div className="flex gap-2 mt-3">
-                  <Quantity></Quantity>
-                  <Cart></Cart>
-                </div>
-                <div>
-                  <Checkout></Checkout>
+                <div className="my-6 flex gap-2 flex-col">
+                  <div className="flex gap-2">
+                    <Quantity></Quantity>
+                    <Cart></Cart>
+                  </div>
+                  <div>
+                    <Checkout></Checkout>
+                  </div>
                 </div>
               </>
             ) : (
               <>
-                <h2 className="text-center text-muted-foreground mt-5">
+                <h2 className="text-center text-muted-foreground my-6">
                   This product is out of stock right now.
                   <br />
                   Please try again later
@@ -46,7 +48,7 @@ export default function Intro({ data }: { data: Product }) {
           </>
         ) : (
           <>
-            <h2 className="text-center text-muted-foreground mt-5">
+            <h2 className="text-center text-muted-foreground my-6">
               Please select a variant to continue
             </h2>
           </>

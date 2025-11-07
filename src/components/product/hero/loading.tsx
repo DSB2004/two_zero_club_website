@@ -5,7 +5,7 @@ export default function Loading() {
     <div className="max-w-[1800px] px-4 lg:px-16 w-full m-auto my-10">
       <div className="flex flex-col sm:flex-row gap-10 animate-pulse">
         {/* Image Skeleton */}
-        <div className="w-1/2 gap-2 lg:w-4/6 hidden md:grid grid-cols-1 lg:grid-cols-2">
+        <div className="w-1/2 gap-2 lg:w-3/4 hidden md:grid grid-cols-1 lg:grid-cols-2">
           <div className="h-72  bg-gray-200 rounded-md "></div>
           <div className="h-72  bg-gray-200 rounded-md "></div>
           <div className="h-72  bg-gray-200 rounded-md "></div>

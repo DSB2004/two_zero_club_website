@@ -26,7 +26,7 @@ export default function Header() {
             alt="logo"
             height="10"
             width="10"
-            className=" w-16 xs:w-20 lg:w-26 "
+            className=" w-16 xs:w-20 lg:w-26 cursor-pointer"
           ></Image>
 
           <div className="lg:gap-10 gap-5 items-center justify-center hidden lg:flex">

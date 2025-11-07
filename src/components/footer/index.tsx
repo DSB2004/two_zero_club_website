@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-green pt-16 ">
-      <div className="max-w-[1800px] m-auto  px-10 sm:px-20 xl:px-32 flex justify-evenly items-start flex-wrap">
-        <div className="flex flex-col gap-4 w-full sm:w-1/2 lg:w-1/4  p-4">
+      <div className="max-w-[1800px] m-auto  px-5 md:px-20 xl:px-32 flex justify-evenly items-start flex-wrap">
+        <div className="flex flex-col gap-4 w-1/2 lg:w-1/4  p-4">
           <h2 className="font-[editorial] text-[1.625rem]">Shopping</h2>
           <ul className="!p-0 text-[1.125rem] flex flex-col">
             <Link href="/footer/New">New</Link>
@@ -17,7 +17,7 @@ export default function Footer() {
             © 2025 Two Zero Club
           </h2>
         </div>
-        <div className="flex flex-col gap-4 w-full sm:w-1/2 lg:w-1/4  p-4">
+        <div className="flex flex-col gap-4 w-1/2 lg:w-1/4  p-4">
           <h2 className="font-[editorial] text-[1.625rem]">Help</h2>
           <ul className="!p-0 text-[1.125rem] flex flex-col ">
             <Link href="/faq">FAQ</Link>
@@ -25,14 +25,14 @@ export default function Footer() {
             <Link href="/contact">Contact Us</Link>
           </ul>
         </div>
-        <div className="flex flex-col gap-4 w-full sm:w-1/2 lg:w-1/4  p-4">
+        <div className="flex flex-col gap-4 w-1/2 lg:w-1/4  p-4">
           <h2 className="font-[editorial] text-[1.625rem]">About Us</h2>
           <ul className="!p-0 text-[1.125rem] flex flex-col">
             <Link href="/about">Our Story</Link>
             <Link href="/blogs">Blogs</Link>
           </ul>
         </div>
-        <div className="flex flex-col gap-4 w-full sm:w-1/2 lg:w-1/4  p-4">
+        <div className="flex flex-col gap-4 w-1/2 lg:w-1/4  p-4">
           <h2 className="font-[editorial] text-[1.625rem]">Stay Connected</h2>
           <ul className="!p-0 flex gap-2">
             <Image

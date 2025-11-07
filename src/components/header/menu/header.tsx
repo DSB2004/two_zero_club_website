@@ -28,7 +28,7 @@ export default function MenuHeader({
       ></Image>
 
       <div className="flex items-center gap-3 justify-center">
-        <SearchIcon className="w-5 h-5 xs:w-7 xs:h-7 cursor-pointer"></SearchIcon>
+        {/* <SearchIcon className="w-5 h-5 xs:w-7 xs:h-7 cursor-pointer"></SearchIcon>
         <span className="relative cursor-pointer">
           <CartIcon
             className="w-5 h-5 xs:w-7 xs:h-7 cursor-pointer"
@@ -47,7 +47,7 @@ export default function MenuHeader({
             </>
           )}
         </span>
-        <Customer></Customer>
+        <Customer></Customer> */}
         <X
           className="w-5 h-5 xs:w-7 xs:h-7 cursor-pointer"
           onClick={() => close(false)}
