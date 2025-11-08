@@ -22,7 +22,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
         />
       )}
 
-      <div className="py-2">
+      <div className="py-2 mt-2">
         <h2 className="text-lg font-[area] font-semibold text-gray-800 mb-2">
           {title}
         </h2>
@@ -34,7 +34,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
 
         <Button
           onClick={() => push(`/blogs/id?id=${id}`)}
-          className="!font-[area] !rounded-none"
+          className="!font-[area] rounded-3xl px-5 py-4"
         >
           Read More
         </Button>

@@ -4,19 +4,19 @@ export default function page() {
   return (
     <section className="w-full px-4 sm:px-10 lg:px-20 py-20 max-w-[1800px] m-auto">
       <div className="2xl:w-[1200px] xl:pl-32">
-        <p className=" font-[editorial] text-[1.75rem] md:text-[2rem] xl:text-[2.25rem]">
+        <p className=" font-[editorial] text-[1.75rem] md:text-[2rem] xl:text-[2.25rem] leading-[2.5rem] tracking-[-2%] mb-5">
           TwoZero Club is a modern lifestyle brand living at the intersection of
           art and culture. We create made-to-order prints, apparel, and everyday
           objects – exclusive drops designed to bring meaning & joy into your
           everyday.
         </p>
-        <p className="text-[1rem] lg:text-[1.25rem] font-[area]">
+        <p className="text-[1rem] lg:text-[1.25rem] font-[area] leading-[120%]">
           We were born from the belief that art shouldn’t live only in galleries
           – it should shape how we live, dress, work and create spaces.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 place-items-center gap-10 my-20">
+      <div className="grid grid-cols-1 md:grid-cols-3 place-items-center gap-3 my-20">
         <Image
           src="/images/about/about-1.png"
           alt="about-1"
@@ -41,25 +41,25 @@ export default function page() {
       </div>
 
       <div className="lg:w-[1000px] lg:ml-auto flex flex-col gap-8">
-        <p className=" font-[area] text-[1.5625rem] md:text-[2rem] xl:text-[2.25rem] leading-10 font-bold">
+        <p className=" font-[area] text-[1.5625rem] leading-[120%] font-bold">
           We collaborate with independent artists to create collections spanning
           art prints, apparel, home objects and everyday carry. Each piece is
           expertly curated, made to order & crafted only when you choose it.
         </p>
 
-        <p className=" font-[area] text-[1.5625rem] md:text-[2rem] xl:text-[2.25rem] leading-10 font-bold">
+        <p className=" font-[area] text-[1.5625rem]  leading-[120%] font-bold">
           No shelves of stock. No mass overproduction. Just thoughtful designs
           produced exclusively for you, by real artists.
         </p>
 
-        <p className="text-[1rem] lg:text-[1.25rem] font-[area]">
+        <p className="text-[1rem] lg:text-[1.25rem] leading-[120%] font-[area]">
           TwoZero Club is not store. It’s a philosophy, objects of meaning,
           drops that matter, and a community that values creativity,
           originality, and design-led living.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 place-items-center gap-10 my-20">
+      <div className="grid grid-cols-1 md:grid-cols-3 place-items-center gap-3 my-20">
         <Image
           src="/images/about/about-4.png"
           alt="about-4"

@@ -24,10 +24,10 @@ export default function TrendingCard(data: IPROPS) {
         className="w-full mb-[1.625rem]"
       ></Image>
 
-      <h2 className="font-[area] text-[1.25rem] sm:text-[1.5rem] font-bold">
+      <h2 className="font-[area] text-[1.25rem] sm:text-[1.5rem]  font-bold">
         {title}
       </h2>
-      <p className="font-[area] text-[0.8rem] sm:text-[1.125rem] ">
+      <p className="font-[area] text-[0.8rem] sm:text-[1.125rem] font-light">
         {description}
       </p>
       <Button

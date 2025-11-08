@@ -21,7 +21,14 @@ function FAQComponent() {
   return (
     <>
       <h4 className="font-[area] text-[0.75rem] sm:text-[1rem] lg:text-[1.125rem] font-bold">
-        Home • {active === "contact" ? "Contact Us" : "FAQs"}
+        Home • FAQ's •
+        <>
+          {active === "order" && " Order & Payment"}
+          {active === "shipping" && " Shipping"}
+          {active === "general" && " General"}
+          {active === "about" && " About Us"}
+          {active === "contact" && " Contact Us"}
+        </>
       </h4>
       <div className="max-w-[1000px] w-full lg:w-[60%]  m-auto ">
         <h2 className="text-[2rem] sm:text-[2.25rem] lg:text-[2.75rem] font-[editorial] mb-5">

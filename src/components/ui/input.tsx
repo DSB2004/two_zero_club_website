@@ -19,7 +19,7 @@ function Input({
           className
         )}
         {...props}
-      />
+      /> 
       {type === "password" && (
         <Eye
           className="w-4 h-4 cursor-pointer absolute right-2 top-1/2 -translate-y-1/2"

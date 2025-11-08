@@ -57,7 +57,7 @@ export default function Grid() {
 
   if (isLoading || !products)
     return (
-      <div className="grid grid-cols-1 min-[500px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5">
+      <div className="grid grid-cols-2 gap-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 lg:gap-5 space-y-5">
         {Array.from([1, 2, 3])?.map((product) => (
           <Loading key={product} />
         ))}
@@ -67,7 +67,7 @@ export default function Grid() {
   return (
     <>
       {products.length > 0 ? (
-        <div className="grid grid-cols-1 min-[500px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5">
+        <div className="grid grid-cols-2 gap-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 lg:gap-5 space-y-5">
           {products.map((product) => (
             <Card key={product.id} {...product} />
           ))}

@@ -10,16 +10,16 @@ export default function Newsletter() {
           placeholder="blur"
           src="/images/newsletter.png"
           alt="newsletter-image"
-          width="500"
-          height="500"
-          className="lg:w-[600px] w-full"
+          width="1000"
+          height="1000"
+          className="lg:w-[700px] w-full"
         ></Image>
 
-        <div className="w-full lg:w-[600px] space-y-2">
+        <div className="w-full lg:w-[500px] space-y-2">
           <h2 className="text-4xl xl:text-[2.75rem] leading-4xl xl:leading-[2.75rem] font-[editorial] ">
             Get updates, offers & special invites.
           </h2>
-          <p className="text-lg xl:text-[1.2rem] font-[area] leading-[120%]">
+          <p className="text-lg xl:text-[1.2rem] font-[area] leading-[120%] w-[80%]">
             Join our newsletter & get 20% off your first order.
           </p>
           <NewsletterForm></NewsletterForm>

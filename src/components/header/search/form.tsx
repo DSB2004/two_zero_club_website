@@ -25,8 +25,8 @@ export default function SearchForm({
         <input
           name="q"
           required
-          className="font-[area] bg-black/5 !px-3 p-1.5 w-full placeholder:font-[area] focus-within:ring-0 focus-within:outline-none "
-          placeholder="Search here..."
+          className="font-[area] bg-black/5 !px-3 rounded-[12px] p-2 w-full placeholder:font-[area] focus-within:ring-0 focus-within:outline-none "
+          placeholder="Search Two Zero Club"
         />
         <Button>
           <ArrowRight></ArrowRight>

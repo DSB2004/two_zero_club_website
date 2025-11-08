@@ -35,7 +35,7 @@ export default function Menu() {
       >
         <div className="w-full  flex flex-col items-start h-screen">
           <MenuHeader close={toggle}></MenuHeader>
-          <div className="flex-1 w-full max-w-723 min-[350px]:max-w-[80%] mx-auto mt-4 overflow-y-auto no-scrollbar">
+          <div className="flex-1 w-full max-w-72  min-[350px]:max-w-[80%] xs:w-[75%] mx-auto mt-4 overflow-y-auto no-scrollbar">
             <Accordion type="multiple" className="w-full flex-1">
               <WallDecor close={toggle}></WallDecor>
               <HomeLiving close={toggle}></HomeLiving>

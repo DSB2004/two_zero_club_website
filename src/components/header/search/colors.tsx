@@ -25,7 +25,7 @@ export default function Colors({
           <div
             onClick={() => handleClick(color.label)}
             key={color + "classic" + index}
-            className="py-[10px] w-full rounded-[1.5rem] col-span-1"
+            className="py-[14px] w-full rounded-[1.5rem] col-span-1"
             style={{ backgroundColor: color.color }}
           ></div>
         ))}
@@ -38,7 +38,7 @@ export default function Colors({
           <div
             onClick={() => handleClick(color.label)}
             key={color + "trending" + index}
-            className="py-[10px] w-full rounded-[1.5rem] col-span-1"
+            className="py-[14px] w-full rounded-[1.5rem] col-span-1"
             style={{ backgroundColor: color.color }}
           ></div>
         ))}

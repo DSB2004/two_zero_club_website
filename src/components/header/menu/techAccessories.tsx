@@ -15,7 +15,7 @@ export default function Tech({ close }: { close: (val: boolean) => void }) {
   }
   return (
     <AccordionItem value="item-3" className="!border-b-1 border-black/50">
-      <AccordionTrigger2 className="  !text-[1.125rem] font-[area] !font-extrabold">
+      <AccordionTrigger2 className="  !text-[1.125rem] font-[area] !font-black">
         Tech & Accessories
       </AccordionTrigger2>
       <AccordionContent className="flex flex-col gap-4 font-[area] max-h-[10000px] overflow-y-auto !text-[1rem]">

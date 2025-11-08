@@ -53,7 +53,7 @@ export default function Variant() {
             onValueChange={(val) => handleChange(ele.name, val)}
             value={selectedOptions[ele.name] ?? ele.values[0]}
           >
-            <SelectTrigger className="w-full  font-[area] border-1 !py-4 border-black rounded-full font-semibold text-[1.125rem]">
+            <SelectTrigger className="w-full  font-[area] border-1 !py-5 px-4 border-black rounded-full font-semibold text-[1.125rem]">
               <SelectValue />
             </SelectTrigger>
 
