@@ -19,6 +19,8 @@ export default function MenuHeader({
   return (
     <header className="bg-white w-full py-4 px-4 lg:px-16 flex justify-between items-center">
       <Image
+        draggable={false}
+        onContextMenu={(e) => e.preventDefault()}
         onClick={() => router.push("/")}
         src="/svg/logo.svg"
         alt="logo"

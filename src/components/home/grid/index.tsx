@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 
@@ -10,6 +11,8 @@ export default function Grid() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
         <div className="col-span-1 border h-[450px]  rounded-[10px] relative overflow-hidden">
           <Image
+            draggable={false}
+            onContextMenu={(e) => e.preventDefault()}
             src="/images/grid-1.png"
             alt="grid-1"
             fill
@@ -19,6 +22,8 @@ export default function Grid() {
 
         <div className="col-span-1 md:col-span-2 border h-[450px]  rounded-[10px] relative overflow-hidden">
           <Image
+            draggable={false}
+            onContextMenu={(e) => e.preventDefault()}
             src="/images/grid-2.png"
             alt="grid-2"
             fill
@@ -28,6 +33,8 @@ export default function Grid() {
 
         <div className="col-span-1 md:col-span-2 border h-[450px]  rounded-[10px] relative overflow-hidden">
           <Image
+            draggable={false}
+            onContextMenu={(e) => e.preventDefault()}
             src="/images/grid-3.png"
             alt="grid-3"
             fill
@@ -37,6 +44,8 @@ export default function Grid() {
 
         <div className="col-span-1 border h-[450px]  rounded-[10px] relative overflow-hidden">
           <Image
+            draggable={false}
+            onContextMenu={(e) => e.preventDefault()}
             src="/images/grid-4.png"
             alt="grid-4"
             fill

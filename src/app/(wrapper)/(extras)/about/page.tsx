@@ -23,6 +23,8 @@ export default function page() {
           width="1000"
           height="1000"
           className="w-full max-w-[450px] md:max-w-full"
+          draggable={false}
+          onContextMenu={(e) => e.preventDefault()}
         ></Image>
         <Image
           src="/images/about/about-2.png"
@@ -30,6 +32,8 @@ export default function page() {
           width="1000"
           height="1000"
           className="w-full max-w-[450px] md:max-w-full"
+          draggable={false}
+          onContextMenu={(e) => e.preventDefault()}
         ></Image>
         <Image
           src="/images/about/about-3.png"
@@ -37,6 +41,8 @@ export default function page() {
           width="1000"
           height="1000"
           className="w-full max-w-[450px] md:max-w-full"
+          draggable={false}
+          onContextMenu={(e) => e.preventDefault()}
         ></Image>
       </div>
 
@@ -66,6 +72,8 @@ export default function page() {
           width="1000"
           height="1000"
           className="w-full max-w-[450px] md:max-w-full"
+          draggable={false}
+          onContextMenu={(e) => e.preventDefault()}
         ></Image>
         <Image
           src="/images/about/about-5.png"
@@ -73,6 +81,8 @@ export default function page() {
           width="1000"
           height="1000"
           className="w-full max-w-[450px] md:max-w-full"
+          draggable={false}
+          onContextMenu={(e) => e.preventDefault()}
         ></Image>
         <Image
           src="/images/about/about-6.png"
@@ -80,6 +90,8 @@ export default function page() {
           width="1000"
           height="1000"
           className="w-full max-w-[450px] md:max-w-full"
+          draggable={false}
+          onContextMenu={(e) => e.preventDefault()}
         ></Image>
       </div>
 
@@ -93,6 +105,8 @@ export default function page() {
           width="30"
           height="30"
           className="hidden md:block"
+          onContextMenu={(e) => e.preventDefault()}
+          draggable={false}
         ></Image>
       </div>
 
@@ -103,9 +117,13 @@ export default function page() {
           width="1000"
           height="1000"
           className="w-full"
+          draggable={false}
+          onContextMenu={(e) => e.preventDefault()}
         ></Image>
         <Image
           src="/images/instagram/instagram-2.png"
+          draggable={false}
+          onContextMenu={(e) => e.preventDefault()}
           alt="instagram-2"
           width="1000"
           height="1000"
@@ -117,9 +135,13 @@ export default function page() {
           width="1000"
           height="1000"
           className="w-full"
+          draggable={false}
+          onContextMenu={(e) => e.preventDefault()}
         ></Image>
         <Image
           src="/images/instagram/instagram-4.png"
+          draggable={false}
+          onContextMenu={(e) => e.preventDefault()}
           alt="instagram-4"
           width="1000"
           height="1000"
@@ -127,6 +149,8 @@ export default function page() {
         ></Image>
         <Image
           src="/images/instagram/instagram-5.png"
+          draggable={false}
+          onContextMenu={(e) => e.preventDefault()}
           alt="instagram-5"
           width="1000"
           height="1000"
@@ -134,6 +158,8 @@ export default function page() {
         ></Image>
         <Image
           src="/images/instagram/instagram-6.png"
+          draggable={false}
+          onContextMenu={(e) => e.preventDefault()}
           alt="instagram-6"
           width="1000"
           height="1000"
@@ -141,12 +167,16 @@ export default function page() {
         ></Image>
         <Image
           src="/images/instagram/instagram-7.png"
+          onContextMenu={(e) => e.preventDefault()}
+          draggable={false}
           alt="instagram-7"
           width="1000"
           height="1000"
           className="w-full"
         ></Image>
         <Image
+          onContextMenu={(e) => e.preventDefault()}
+          draggable={false}
           src="/images/instagram/instagram-8.png"
           alt="instagram-8"
           width="1000"

@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { useRouter, useParams } from "next/navigation";
 export default function Loading() {
   const router = useRouter();

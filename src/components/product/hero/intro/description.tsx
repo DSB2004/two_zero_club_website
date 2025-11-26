@@ -17,25 +17,53 @@ export default function Description(data: Product) {
 
       <div className="grid grid-cols-2 mt-2 sm:mt-5 gap-2  m-auto">
         <div className="bg-[#ECF4EC] rounded-[0.625rem]  p-4 flex-col w-full flex items-center justify-center gap-2">
-          <Image src="/svg/paint.svg" alt="" height={30} width={30}></Image>
+          <Image
+            draggable={false}
+            onContextMenu={(e) => e.preventDefault()}
+            src="/svg/paint.svg"
+            alt=""
+            height={30}
+            width={30}
+          ></Image>
           <p className="text-[0.875rem] font-[area] px-3 text-center pt-1 leading-[100%]">
             Custom made to order
           </p>
         </div>
         <div className="bg-[#ECF4EC] rounded-[0.625rem] p-4 flex-col w-full flex items-center justify-center gap-2">
-          <Image src="/svg/truck.svg" alt="" height={30} width={30}></Image>
+          <Image
+            draggable={false}
+            onContextMenu={(e) => e.preventDefault()}
+            src="/svg/truck.svg"
+            alt=""
+            height={30}
+            width={30}
+          ></Image>
           <p className="text-[0.875rem] font-[area] px-3 text-center pt-1 leading-[100%]">
             Fast International Shipping
           </p>
         </div>
         <div className="bg-[#ECF4EC] rounded-[0.625rem] p-4 flex-col w-full flex items-center justify-center gap-2">
-          <Image src="/svg/box.svg" alt="" height={30} width={30}></Image>
+          <Image
+            draggable={false}
+            onContextMenu={(e) => e.preventDefault()}
+            src="/svg/box.svg"
+            alt=""
+            height={30}
+            width={30}
+          ></Image>
           <p className="text-[0.875rem] font-[area] px-3 text-center pt-1 leading-[100%]">
             Easy 14-Day Returns*
           </p>
         </div>
         <div className="bg-[#ECF4EC] rounded-[0.625rem] p-4 flex-col w-full flex items-center justify-center gap-2">
-          <Image src="/svg/paint.svg" alt="" height={30} width={30}></Image>
+          <Image
+            draggable={false}
+            onContextMenu={(e) => e.preventDefault()}
+            src="/svg/paint.svg"
+            alt=""
+            height={30}
+            width={30}
+          ></Image>
           <p className="text-[0.875rem] font-[area] px-3 text-center pt-1 leading-[100%]">
             Support Independent artists
           </p>

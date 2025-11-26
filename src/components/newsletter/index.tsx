@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import NewsletterForm from "./form";
@@ -6,6 +8,7 @@ export default function Newsletter() {
     <section className="bg-brown p-6 md:p-10 ">
       <div className=" flex justify-center gap-5 sm:gap-10 items-center flex-col lg:flex-row  max-w-[2000px] m-auto">
         <Image
+        
           blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA..."
           placeholder="blur"
           src="/images/newsletter.png"
@@ -13,6 +16,8 @@ export default function Newsletter() {
           width="1000"
           height="1000"
           className="lg:w-[700px] w-full"
+          draggable={false}
+          onContextMenu={(e) => e.preventDefault()}
         ></Image>
 
         <div className="w-full lg:w-[500px] space-y-2">

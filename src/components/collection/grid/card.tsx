@@ -15,6 +15,8 @@ export default function Card(data: any) {
     >
       <div className="group relative w-full pb-[150%] overflow-hidden rounded-lg mb-5 sm:mb-[1.625rem]  ">
         <Image
+          draggable={false}
+          onContextMenu={(e) => e.preventDefault()}
           src={images?.[0]?.url || thumbnail || "/images/card.png"}
           alt={title || "card"}
           fill
@@ -23,6 +25,8 @@ export default function Card(data: any) {
 
         {images?.[1] && (
           <Image
+            draggable={false}
+            onContextMenu={(e) => e.preventDefault()}
             src={images[1].url}
             alt={title || "card"}
             fill

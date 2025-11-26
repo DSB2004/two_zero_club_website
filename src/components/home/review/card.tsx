@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 import { Star } from "lucide-react";
@@ -15,6 +16,8 @@ export default function ReviewCard(data: IPROPS) {
   return (
     <div className="flex flex-col px-4 md:px-16 items-center lg:flex-row gap-4 sm:gap-6 md:gap-10 lg:gap-2 m-auto w-full xl:w-[1200px]">
       <Image
+        draggable={false}
+        onContextMenu={(e) => e.preventDefault()}
         src="/images/review.png"
         alt={id.toString()}
         width="1200"

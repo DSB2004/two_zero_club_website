@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Card from "./card";
+import Card from "@/components/common/card";
 import CardCarousel from "./carousel";
 import Loading from "./loading";
 import { useFullCollectionStore } from "@/store/full-collection.store";

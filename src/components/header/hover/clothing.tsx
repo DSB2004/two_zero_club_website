@@ -119,6 +119,8 @@ export default function Clothing() {
 
           <div className="xl:block hidden">
             <Image
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
               className="h-full min-w-56"
               src={"/images/hover/clothing.png"}
               alt="menu-image"

@@ -30,6 +30,8 @@ export default function Cart() {
         <>
           Add to basket
           <Image
+            draggable={false}
+            onContextMenu={(e) => e.preventDefault()}
             src="/svg/basket.svg"
             alt="basket"
             width={18}

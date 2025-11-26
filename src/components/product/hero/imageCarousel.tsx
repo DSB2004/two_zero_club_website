@@ -13,6 +13,8 @@ export default function ImageCarousel({ data }: { data: any }) {
       <div className="w-1/2 xl:w-[77%] hidden md:grid grid-cols-1 xl:grid-cols-2">
         {data.images.map((ele: any) => (
           <Image
+            draggable={false}
+            onContextMenu={(e) => e.preventDefault()}
             key={ele.altText}
             src={ele.url}
             alt={"image"}
@@ -28,6 +30,8 @@ export default function ImageCarousel({ data }: { data: any }) {
           {data.images.map((ele: any) => (
             <CarouselItem key={ele.altText}>
               <Image
+                draggable={false}
+                onContextMenu={(e) => e.preventDefault()}
                 key={ele.altText}
                 src={ele.url}
                 alt={"image"}

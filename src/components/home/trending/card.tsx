@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Button } from "@/components/ui/button";
 
@@ -18,7 +19,6 @@ export default function TrendingCard(data: any) {
           fill
           className="object-cover transition-opacity duration-1000 ease-in-out "
         />
-
       </div>
 
       <h2 className="font-[area] text-[1.25rem] sm:text-[1.5rem] line-clamp-1 font-bold">

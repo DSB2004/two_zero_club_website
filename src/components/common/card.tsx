@@ -1,38 +1,40 @@
 import React from "react";
 import Image from "next/image";
-import { useRouter, useParams } from "next/navigation";
-
-export default function Card({
+import { useSearchParams } from "next/navigation";
+import Link from "next/link";
+export default function ProductCard({
   handle,
   images,
   title,
   price,
   thumbnail,
   id,
-  collection,
 }: any) {
-  const router = useRouter();
+  const searchParams = useSearchParams();
+  const query = searchParams.get("q");
   return (
-    <div
+    <Link
       className="w-full cursor-pointer"
-      onClick={() =>
-        router.push(`/product/${handle}?id=${id}&collection=${collection}`)
-      }
+      href={`/product/${handle}?id=${id}&collection=Search&sub=${query}`}
     >
       <div className="group relative w-full pb-[150%] overflow-hidden rounded-lg mb-5 sm:mb-[1.625rem]  ">
         <Image
+          draggable={false}
+          onContextMenu={(e) => e.preventDefault()}
           src={images?.[0]?.url || thumbnail || "/images/card.png"}
           alt={title || "card"}
           fill
-          className="object-cover transition-opacity duration-1000 ease-in-out group-hover:opacity-0"
+          className="object-cover pointer-events-none transition-opacity duration-1000 ease-in-out group-hover:opacity-0"
         />
 
         {images?.[1] && (
           <Image
+            draggable={false}
+            onContextMenu={(e) => e.preventDefault()}
             src={images[1].url}
             alt={title || "card"}
             fill
-            className="object-cover opacity-0 transition-opacity duration-1000 ease-in-out group-hover:opacity-100"
+            className="object-cover pointer-events-none opacity-0 transition-opacity duration-1000 ease-in-out group-hover:opacity-100"
           />
         )}
       </div>
@@ -43,6 +45,6 @@ export default function Card({
       <p className="text-[14px] sm:text-[1.125rem] font-[area] font-light mt-1">
         From ${price}
       </p>
-    </div>
+    </Link>
   );
 }

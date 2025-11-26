@@ -27,6 +27,8 @@ export default function Tech({ close }: { close: (val: boolean) => void }) {
         </div>
         <ShopByColor click={handleClick}></ShopByColor>
         <Image
+          draggable={false}
+          onContextMenu={(e) => e.preventDefault()}
           className="w-full"
           src={"/images/menu/wall-decor.png"}
           alt="menu-image"

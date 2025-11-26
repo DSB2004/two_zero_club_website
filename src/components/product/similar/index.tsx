@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Card from "./card";
+import Card from "@/components/common/card";
 import CardCarousel from "./carousel";
 import { useSimilarStore } from "@/store/similar.store";
 import Loading from "./loading";

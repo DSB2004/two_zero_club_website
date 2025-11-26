@@ -121,6 +121,8 @@ export default function Home() {
 
           <div className="xl:block hidden">
             <Image
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
               className="h-full min-w-56"
               src={"/images/hover/home.png"}
               alt="menu-image"

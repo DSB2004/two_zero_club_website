@@ -52,6 +52,8 @@ export default function HomeLiving({
         </ul>
         <ShopByColor click={handleClick}></ShopByColor>
         <Image
+          draggable={false}
+          onContextMenu={(e) => e.preventDefault()}
           className="w-full"
           src={"/images/menu/home-living.png"}
           alt="menu-image"

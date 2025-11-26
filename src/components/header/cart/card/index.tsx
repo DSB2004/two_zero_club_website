@@ -15,6 +15,8 @@ export default function Card(data: CartItem) {
       <div className="flex gap-2 items-center ">
         <div className="w-32 h-32 flex-shrink-0 flex items-center justify-center bg-[#f5f5f5] relative">
           <Image
+            draggable={false}
+            onContextMenu={(e) => e.preventDefault()}
             src={featuredImage.url}
             alt={featuredImage.altText || ""}
             height={featuredImage.height}
@@ -32,9 +34,7 @@ export default function Card(data: CartItem) {
           ></Trash2>
         </div>
         <div className="flex flex-col flex-1  min-h-32">
-          <h2 className="font-[area] text-[0.8rem] line-clamp-4">
-            {title}
-          </h2>
+          <h2 className="font-[area] text-[0.8rem] line-clamp-4">{title}</h2>
           <ul>
             {data.merchandise.selectedOptions.map((option) => (
               <li

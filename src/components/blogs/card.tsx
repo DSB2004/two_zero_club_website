@@ -3,27 +3,32 @@ import React from "react";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
+
 type ArticleCardProps = {
   article: ShopifyArticle;
 };
 
 export default function ArticleCard({ article }: ArticleCardProps) {
-  const { image, title, excerpt, id, handle } = article;
+  const { image, title, excerpt, id } = article;
   const { push } = useRouter();
+
   return (
-    <div className="w-full">
+    <Link className="w-full block" href={`/blogs/id?id=${id}`}>
       {image && (
         <Image
+          draggable={false}
+          onContextMenu={(e) => e.preventDefault()}
           src={image.url}
           alt={image.altText || article.title}
           height={image.height}
           width={image.width}
-          className="w-full h-64"
+          className="w-full h-64 pointer-events-none object-cover"
         />
       )}
 
       <div className="py-2 mt-2">
-        <h2 className="text-lg font-[area] font-semibold  mb-2">{title}</h2>
+        <h2 className="text-lg font-[area] font-semibold mb-2">{title}</h2>
 
         <p
           className="text-muted-foreground text-sm mb-4 font-[area] line-clamp-3"
@@ -31,12 +36,15 @@ export default function ArticleCard({ article }: ArticleCardProps) {
         />
 
         <Button
-          onClick={() => push(`/blogs/id?id=${id}`)}
+          onClick={(e) => {
+            e.preventDefault(); // prevent Link click
+            push(`/blogs/id?id=${id}`);
+          }}
           className="!font-[area] rounded-3xl p-5!"
         >
           Read More
         </Button>
       </div>
-    </div>
+    </Link>
   );
 }

@@ -92,6 +92,8 @@ export default function Tech() {
 
           <div className="xl:block hidden">
             <Image
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
               className="h-full min-w-56"
               src={"/images/hover/tech.png"}
               alt="menu-image"

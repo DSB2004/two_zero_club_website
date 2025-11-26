@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 
@@ -9,7 +10,8 @@ interface IPROPS {
 export default function CollectionCard(data: IPROPS) {
   return (
     <Image
-      
+      draggable={false}
+      onContextMenu={(e) => e.preventDefault()}
       src={data.thumbnail}
       alt={data.id.toString()}
       height={500}

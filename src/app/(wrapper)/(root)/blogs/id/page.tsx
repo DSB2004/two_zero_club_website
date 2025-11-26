@@ -63,6 +63,8 @@ export default function BlogPage() {
         {article.image && (
           <div className="relative rounded overflow-hidden  font-[area] w-full h-[300px] sm:h-[420px] lg:h-[520px]">
             <Image
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
               src={article.image.url}
               alt={article.image.altText || article.title}
               fill

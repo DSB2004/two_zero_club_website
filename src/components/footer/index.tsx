@@ -11,7 +11,7 @@ export default function Footer() {
           </h2>
           <ul className="!p-0 text-[1rem] sm:text-[1.125rem] flex flex-col font-[area]">
             <Link href="/footer/New">New</Link>
-            <Link href="/footer/BestSellers">BestSellers</Link>
+            <Link href="/footer/Bestsellers">Bestsellers</Link>
             <Link href="/footer/Trending">Trending</Link>
             <Link href="/footer/As seen on social">As seen on social</Link>
           </ul>
@@ -44,24 +44,32 @@ export default function Footer() {
           </h2>
           <ul className="!p-0 flex gap-2">
             <Image
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
               src="/svg/facebook.svg"
               alt="facebook"
               height="30"
               width="30"
             ></Image>
             <Image
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
               src="/svg/tiktok.svg"
               alt="facebook"
               height="30"
               width="30"
             ></Image>
             <Image
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
               src="/svg/instagram.svg"
               alt="facebook"
               height="30"
               width="30"
             ></Image>
             <Image
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
               src="/svg/pinterest.svg"
               alt="facebook"
               height="30"

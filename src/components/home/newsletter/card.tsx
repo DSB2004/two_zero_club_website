@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 type ArticleCardProps = {
   article: ShopifyArticle;
 };
@@ -12,14 +13,16 @@ export default function ArticleCard({ article }: ArticleCardProps) {
   const { image, title, excerpt, id, handle } = article;
   const { push } = useRouter();
   return (
-    <div className="w-full">
+    <Link className="w-full" href={`/blogs/id?id=${id}`}>
       {image && (
         <Image
+          draggable={false}
+          onContextMenu={(e) => e.preventDefault()}
           src={image.url}
           alt={image.altText || article.title}
           height={image.height}
           width={image.width}
-          className="w-full "
+          className="w-full pointer-events-none object-cover "
         />
       )}
 
@@ -38,6 +41,6 @@ export default function ArticleCard({ article }: ArticleCardProps) {
           Read More
         </Button>
       </div>
-    </div>
+    </Link>
   );
 }

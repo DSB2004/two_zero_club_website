@@ -24,6 +24,8 @@ export default function Checkout() {
         <>
           Pay with
           <Image
+            draggable={false}
+            onContextMenu={(e) => e.preventDefault()}
             src="/svg/shop-pay.svg"
             alt="basket"
             width={86}

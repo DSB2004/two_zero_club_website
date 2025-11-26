@@ -21,6 +21,8 @@ export default function Header() {
       <header className="sticky top-0 bg-white z-[4000]  ">
         <div className="max-w-[1800px] m-auto py-4 px-4 lg:px-16 flex justify-between items-center">
           <Image
+            draggable={false}
+            onContextMenu={(e) => e.preventDefault()}
             onClick={() => router.push("/")}
             src="/svg/logo.svg"
             alt="logo"

@@ -38,6 +38,8 @@ export default function Hero() {
         }}
       ></div>
       <Image
+        draggable={false}
+        onContextMenu={(e) => e.preventDefault()}
         src="/images/hero.png"
         alt="hero-image"
         width="1200"

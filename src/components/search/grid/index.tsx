@@ -1,11 +1,11 @@
 "use client";
 
-import Card from "./card";
+
 import { useSearchStore } from "@/store/search.store";
 import Loading from "./loading";
 import { useEffect, useRef } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
-
+import Card from "@/components/common/card";
 export default function Grid() {
   const {
     isLoading,
