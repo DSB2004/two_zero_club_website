@@ -37,11 +37,11 @@ export default function WallDecor() {
             <ul className="pl-0 font-area cursor-pointer">
               <List onClick={() => handleClick("Art Prints")}>Art Prints</List>
               <List onClick={() => handleClick("Framed Prints")}>
-                Framed Prints{" "}
+                Framed Prints
               </List>
-              <List onClick={() => handleClick("Posters Wall")}>
+              {/* <List onClick={() => handleClick("Posters Wall")}>
                 Posters Wall{" "}
-              </List>
+              </List> */}
               <List onClick={() => handleClick("Tapestries")}>Tapestries</List>
               <List onClick={() => handleClick("Canvas")}>Canvas</List>
             </ul>

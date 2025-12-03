@@ -45,9 +45,9 @@ export default function Home() {
               <List onClick={() => handleClick("Throw Pillows")}>
                 Throw Pillows{" "}
               </List>
-              <List onClick={() => handleClick("Wall Clocks")}>
+              {/* <List onClick={() => handleClick("Wall Clocks")}>
                 Wall Clocks{" "}
-              </List>
+              </List> */}
               <List onClick={() => handleClick("Tapestries")}>Tapestries</List>
             </ul>
             <h2 className="text-[14px] font-bold  font-area text-[#08814E]">

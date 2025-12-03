@@ -63,7 +63,7 @@ export default function Header() {
 
               <Tech></Tech>
             </div>
-            <div className="relative inline-block group  py-5">
+            {/* <div className="relative inline-block group  py-5">
               <Link
                 href="/Clothing Lifestyle/New"
                 className="peer font-bold px-[14px] transition-all duration-200 lg:px-2 py-[6px] rounded-full font-area text-[0.8rem] xl:text-[1.125rem] border border-transparent box-border group-hover:border-black"
@@ -72,7 +72,7 @@ export default function Header() {
               </Link>
 
               <Clothing></Clothing>
-            </div>
+            </div> */}
           </div>
           <div className="flex items-center gap-3 justify-center">
             <Search></Search>
