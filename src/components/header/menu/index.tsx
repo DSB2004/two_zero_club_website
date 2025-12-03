@@ -40,7 +40,7 @@ export default function Menu() {
               <WallDecor close={toggle}></WallDecor>
               <HomeLiving close={toggle}></HomeLiving>
               <Tech close={toggle}></Tech>
-              <Clothing close={toggle}></Clothing>
+              {/* <Clothing close={toggle}></Clothing> */}
             </Accordion>
             <ShopByFeature close={toggle}></ShopByFeature>
           </div>
