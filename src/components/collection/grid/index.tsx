@@ -81,7 +81,7 @@ export default function Grid() {
           {hasNextPage && <div ref={sentinelRef} className="h-1" />}
         </div>
       ) : (
-        <div className="col-span-full text-center text-gray-foreground">
+        <div className="col-span-full font-area text-center text-gray-foreground">
           No products found.
         </div>
       )}

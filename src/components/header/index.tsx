@@ -4,7 +4,6 @@ import Link from "next/link";
 
 import Image from "next/image";
 import Menu from "./menu";
-import Clothing from "./hover/clothing";
 import WallDecor from "./hover/wallDecor";
 import Tech from "./hover/tech";
 import { useRouter } from "next/navigation";
@@ -34,7 +33,7 @@ export default function Header() {
           <div className="lg:gap-10 gap-5 items-center justify-center hidden lg:flex">
             <div className="relative inline-block group  py-5">
               <Link
-                href="/Wall Decor/New"
+                href="/Wall Decor/all"
                 className="peer font-bold px-[14px] transition-all duration-200 lg:px-2 py-[6px] rounded-full font-area text-[0.8rem] xl:text-[1.125rem]  border border-transparent box-border group-hover:border-black"
               >
                 Wall Decor
@@ -45,7 +44,7 @@ export default function Header() {
 
             <div className="relative inline-block group  py-5">
               <Link
-                href="/Home Living/New"
+                href="/Home Living/all"
                 className="peer font-bold px-[14px] transition-all duration-200 lg:px-2 py-[6px] rounded-full font-area text-[0.8rem] xl:text-[1.125rem] border border-transparent box-border group-hover:border-black"
               >
                 Home & Living
@@ -55,7 +54,7 @@ export default function Header() {
             </div>
             <div className="relative inline-block group  py-5">
               <Link
-                href="/Tech Accessories/New"
+                href="/Tech Accessories/all"
                 className="peer font-bold px-[14px] transition-all duration-200 lg:px-2 py-[6px] rounded-full font-area text-[0.8rem] xl:text-[1.125rem] border border-transparent box-border group-hover:border-black"
               >
                 Tech & Accessories

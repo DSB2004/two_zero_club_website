@@ -102,12 +102,13 @@ export const reshapeProduct = (
   }
 
   const { images, variants, collections, ...rest } = product;
-
+  console.log(removeEdgesAndNodes(collections));
   return {
     ...rest,
     images: reshapeImages(images, product.title),
     variants: removeEdgesAndNodes(variants),
-    collection: collections.edges[0].node.title,
+    // @ts-ignore
+    collection: removeEdgesAndNodes(collections)[0].handle ?? "",
   };
 };
 

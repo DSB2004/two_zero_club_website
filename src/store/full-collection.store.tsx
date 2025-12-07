@@ -4,6 +4,7 @@ import React, { createContext, useContext } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useSearchParams } from "next/navigation";
 import { getFullCollectionProducts } from "@/actions/products/collection.action";
+import { useProductStore } from "./product.store";
 
 interface FullCollectionStoreInterface {
   isFetching: boolean;
@@ -21,10 +22,8 @@ export const FullCollectionStore = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const searchParams = useSearchParams();
+  const { product: data } = useProductStore();
 
-  const collection = searchParams.get("collection") as string;
-  const sub = searchParams.get("sub") as string;
   const {
     isFetching,
     isError,
@@ -32,20 +31,12 @@ export const FullCollectionStore = ({
     data: products,
     error,
   } = useQuery<any | undefined>({
-    queryKey: ["product-collection", collection, sub],
+    queryKey: ["product-collection", data?.collection],
     queryFn: async () => {
-      const decodedCollection = decodeURIComponent(collection.toString());
-      const decodedSub = decodeURIComponent(sub.toString());
-
-      const query = `${decodedSub
-        .split(" ")
-        .join("-")
-        .toLowerCase()}${decodedCollection.split(" ").join("-").toLowerCase()}`;
-      const res = await getFullCollectionProducts(query || "");
-
+      const res = await getFullCollectionProducts(data?.collection || "");
       return res;
     },
-    enabled: !!collection,
+    enabled: !!data?.collection,
     staleTime: 1000 * 60 * 5,
     refetchOnWindowFocus: false,
     refetchOnReconnect: false,

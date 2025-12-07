@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Footer() {
   return (
-    <footer className="bg-green pt-4 md:pt-16 ">
+    <footer className="bg-green py-4 md:py-16 ">
       <div className="max-w-[1800px] m-auto  px-5 md:px-20 xl:px-32 flex justify-evenly items-start flex-wrap">
         <div className="flex flex-col gap-0 sm:gap-4 w-1/2 lg:w-1/4  p-2 sm:p-4">
           <h2 className="font-editorial text-[1.4rem] sm:text-[1.625rem]">

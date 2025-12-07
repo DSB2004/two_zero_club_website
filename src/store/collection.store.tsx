@@ -52,10 +52,18 @@ export const CollectionStore = ({
       const decodedCollection = decodeURIComponent(collection.toString());
       const decodedSub = decodeURIComponent(sub.toString());
 
-      const query = `${decodedSub
-        .split(" ")
-        .join("-")
-        .toLowerCase()}${decodedCollection.split(" ").join("-").toLowerCase()}`;
+      let query = "";
+      if (decodedSub === "all") {
+        query = `${decodedCollection.split(" ").join("-").toLowerCase()}`;
+      } else {
+        query = `${decodedSub
+          .split(" ")
+          .join("-")
+          .toLowerCase()}-${decodedCollection
+          .split(" ")
+          .join("-")
+          .toLowerCase()}`;
+      }
 
       const res = await getCollectionProducts({
         handle: query,
