@@ -102,7 +102,6 @@ export const reshapeProduct = (
   }
 
   const { images, variants, collections, ...rest } = product;
-  console.log(removeEdgesAndNodes(collections));
   return {
     ...rest,
     images: reshapeImages(images, product.title),

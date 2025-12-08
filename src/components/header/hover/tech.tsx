@@ -5,8 +5,9 @@ import { useRouter } from "next/navigation";
 import List from "@/components/common/list";
 export default function Tech() {
   const router = useRouter();
-  function handleClick(sub: string) {
-    router.push(`/Tech Accessories/${sub}`);
+  function handleClick(tag: string) {
+    const slug = tag.split(" ").join("-").toLowerCase() + "-tech-accessories";
+    router.push("/collections/" + slug);
   }
   return (
     <>

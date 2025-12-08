@@ -2,9 +2,8 @@
 
 import React, { createContext, useContext } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { useSearchParams } from "next/navigation";
 import { getRecommendedProducts } from "@/actions/products/similar.action.";
-import { Product } from "@/lib/shopify/types";
+import { useProductStore } from "./product.store";
 
 interface SimilarStoreInterface {
   isFetching: boolean;
@@ -17,9 +16,8 @@ interface SimilarStoreInterface {
 const SimilarStoreContext = createContext<SimilarStoreInterface | null>(null);
 
 export const SimilarStore = ({ children }: { children: React.ReactNode }) => {
-  const searchParams = useSearchParams();
-
-  const id = searchParams.get("id");
+  const { product: data } = useProductStore();
+  const id = data?.id;
 
   const {
     isFetching,

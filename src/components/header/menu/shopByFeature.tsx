@@ -11,28 +11,28 @@ export default function ShopByFeature({
       <div className="flex flex-col gap-1 !border-b-1 py-4 border-black/50 cursor-pointer">
         <Link
           onClick={() => close(false)}
-          href="/footer/New"
+          href="/collections/new-footer"
           className="text-[1rem] font-area font-extrabold "
         >
           New
         </Link>
         <Link
           onClick={() => close(false)}
-          href="/footer/Trending"
+          href="/collections/trending-footer"
           className="text-[1rem] font-area font-extrabold "
         >
           Trending
         </Link>
         <Link
           onClick={() => close(false)}
-          href="/footer/BestSellers"
+          href="/collections/bestsellers-footer"
           className="text-[1rem] font-area font-extrabold "
         >
           BestSellers
         </Link>
         <Link
           onClick={() => close(false)}
-          href="/footer/As seen on social"
+          href="/collections/as-seen-on-social-footer"
           className="text-[1rem] font-area font-extrabold "
         >
           As seen on Social

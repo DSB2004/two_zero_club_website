@@ -3,17 +3,12 @@ import Image from "next/image";
 import { useRouter, useParams } from "next/navigation";
 
 export default function Card(data: any) {
-  const { handle, images, title, price, thumbnail, id } = data;
+  const { handle, images, title, price, thumbnail } = data;
   const router = useRouter();
-  const { collection, sub } = useParams();
   return (
     <div
       className="w-full cursor-pointer"
-      onClick={() =>
-        router.push(
-          `/product/${handle}?id=${id}&collection=${collection}&sub=${sub}`
-        )
-      }
+      onClick={() => router.push(`/products/${handle}`)}
     >
       <div className="group relative w-full pb-[150%] overflow-hidden rounded-lg mb-5 sm:mb-[1.625rem]  ">
         <Image

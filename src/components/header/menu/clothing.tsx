@@ -9,8 +9,9 @@ import React from "react";
 import Image from "next/image";
 export default function Clothing({ close }: { close: (val: boolean) => void }) {
   const router = useRouter();
-  function handleClick(sub: string) {
-    router.push(`/Clothing Lifestyle/${sub}`);
+  function handleClick(tag: string) {
+    const slug = tag.split(" ").join("-").toLowerCase() + "-clothing";
+    router.push("/collections/" + slug);
     close(false);
   }
   return (

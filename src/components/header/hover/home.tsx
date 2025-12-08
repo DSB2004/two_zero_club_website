@@ -5,8 +5,9 @@ import List from "../../common/list";
 import { useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
-  function handleClick(sub: string) {
-    router.push(`/Home Living/${sub}`);
+  function handleClick(tag: string) {
+    const slug = tag.split(" ").join("-").toLowerCase() + "-home-living";
+    router.push("/collections/" + slug);
   }
   return (
     <>

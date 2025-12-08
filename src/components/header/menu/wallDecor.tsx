@@ -13,8 +13,9 @@ export default function WallDecor({
   close: (val: boolean) => void;
 }) {
   const router = useRouter();
-  function handleClick(sub: string) {
-    router.push(`/Wall Decor/${sub}`);
+  function handleClick(tag: string) {
+    const slug = tag.split(" ").join("-").toLowerCase() + "-wall-decor";
+    router.push("/collections/" + slug);
     close(false);
   }
   return (
@@ -24,10 +25,12 @@ export default function WallDecor({
       </AccordionTrigger2>
       <AccordionContent className="flex flex-col gap-4 font-area max-h-[10000px] overflow-y-auto !text-[1rem]">
         <div className="pl-0 font-area cursor-pointer flex flex-col gap-1">
-          <li onClick={() => handleClick("Art Prints")}>Art Prints</li>
-          <li onClick={() => handleClick("Framed Prints")}>Framed Prints </li>
-          <li onClick={() => handleClick("Posters Wall")}>Posters Wall </li>
-          <li onClick={() => handleClick("Tapestries")}>Tapestries</li>
+          <li onClick={() => handleClick("Art Print")}>Art Prints</li>
+          <li onClick={() => handleClick("Framed Print")}>Framed Prints</li>
+          <li onClick={() => handleClick("Poster")}>Posters</li>
+          <li onClick={() => handleClick("Wall Tapestries")}>
+            Wall Tapestries
+          </li>
           <li onClick={() => handleClick("Canvas")}>Canvas</li>
         </div>
         <ShopByColor click={handleClick}></ShopByColor>

@@ -1,11 +1,8 @@
-import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import { Search, User, ShoppingCart, MenuIcon } from "lucide-react";
+import { MenuIcon } from "lucide-react";
 import MenuHeader from "./header";
 import WallDecor from "./wallDecor";
 import Tech from "./techAccessories";
-import Clothing from "./clothing";
 import HomeLiving from "./homeLiving";
 import { Accordion } from "@/components/ui/accordion";
 import ShopByFeature from "./shopByFeature";

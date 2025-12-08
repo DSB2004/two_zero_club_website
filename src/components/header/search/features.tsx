@@ -1,6 +1,5 @@
 import React from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 import List from "@/components/common/list";
 export default function Features({
   onClick,
@@ -20,41 +19,38 @@ export default function Features({
         </h2>
         <div className="pl-0 font-area cursor-pointer flex flex-col">
           <List>
-            <Link
-              href="#"
+            <span
               onClick={() => handleClick("New")}
-              className="text-[1rem] font-area "
+              className="text-[1rem] font-area cursor-pointer"
             >
               New
-            </Link>
+            </span>
           </List>
+
           <List>
-            <Link
-              href="#"
+            <span
               onClick={() => handleClick("Trending")}
               className="text-[1rem] font-area "
             >
               Trending
-            </Link>
+            </span>
           </List>
 
           <List>
-            <Link
-              href="#"
+            <span
               onClick={() => handleClick("BestSellers")}
               className="text-[1rem] font-area "
             >
               BestSellers
-            </Link>
+            </span>
           </List>
           <List>
-            <Link
-              href="#"
+            <span
               onClick={() => handleClick("As seen on Social")}
               className="text-[1rem] font-area "
             >
               As seen on Social
-            </Link>
+            </span>
           </List>
         </div>
       </div>

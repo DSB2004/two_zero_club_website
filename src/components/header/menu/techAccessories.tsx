@@ -9,8 +9,10 @@ import React from "react";
 import Image from "next/image";
 export default function Tech({ close }: { close: (val: boolean) => void }) {
   const router = useRouter();
-  function handleClick(sub: string) {
-    router.push(`/Tech Accessories/${sub}`);
+
+  function handleClick(tag: string) {
+    const slug = tag.split(" ").join("-").toLowerCase() + "-tech-accessories";
+    router.push("/collections/" + slug);
     close(false);
   }
   return (

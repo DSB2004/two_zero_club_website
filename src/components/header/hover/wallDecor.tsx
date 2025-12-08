@@ -5,8 +5,9 @@ import List from "@/components/common/list";
 import { useRouter } from "next/navigation";
 export default function WallDecor() {
   const router = useRouter();
-  function handleClick(sub: string) {
-    router.push(`/Wall Decor/${sub}`);
+  function handleClick(tag: string) {
+    const slug = tag.split(" ").join("-").toLowerCase() + "-wall-decor";
+    router.push("/collections/" + slug);
   }
   return (
     <>

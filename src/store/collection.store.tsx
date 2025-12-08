@@ -25,7 +25,7 @@ export const CollectionStore = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const { collection, sub } = useParams();
+  const { collection } = useParams();
   const searchParams = useSearchParams();
   const pageCursor = searchParams.get("p") || undefined;
 
@@ -39,34 +39,18 @@ export const CollectionStore = ({
     hasNextPage,
     isFetchingNextPage,
   } = useInfiniteQuery({
-    queryKey: ["collection", collection, sub],
+    queryKey: ["collection", collection],
     // @ts-ignore
     queryFn: async ({ pageParam }) => {
-      if (!collection || !sub) {
+      if (!collection) {
         return {
           products: [],
           pageInfo: { hasNextPage: false, endCursor: null },
         };
       }
 
-      const decodedCollection = decodeURIComponent(collection.toString());
-      const decodedSub = decodeURIComponent(sub.toString());
-
-      let query = "";
-      if (decodedSub === "all") {
-        query = `${decodedCollection.split(" ").join("-").toLowerCase()}`;
-      } else {
-        query = `${decodedSub
-          .split(" ")
-          .join("-")
-          .toLowerCase()}-${decodedCollection
-          .split(" ")
-          .join("-")
-          .toLowerCase()}`;
-      }
-
       const res = await getCollectionProducts({
-        handle: query,
+        handle: collection.toString(),
         first: 10,
         after: pageParam || pageCursor,
       });
@@ -77,7 +61,7 @@ export const CollectionStore = ({
     getNextPageParam: (lastPage) =>
       lastPage?.pageInfo?.hasNextPage ? lastPage.pageInfo.endCursor : undefined,
     initialPageParam: undefined,
-    enabled: !!sub && !!collection,
+    enabled: !!collection,
     staleTime: 1000 * 60 * 5,
     refetchOnWindowFocus: false,
     refetchOnReconnect: false,

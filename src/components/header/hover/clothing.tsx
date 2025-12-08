@@ -5,8 +5,9 @@ import StaticData from "@/assets/static/menu.static.json";
 import { useRouter } from "next/navigation";
 export default function Clothing() {
   const router = useRouter();
-  function handleClick(sub: string) {
-    router.push(`/Clothing Lifestyle/${sub}`);
+  function handleClick(tag: string) {
+    const slug = tag.split(" ").join("-").toLowerCase() + "-clothing";
+    router.push("/collections/" + slug);
   }
   return (
     <>

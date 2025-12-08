@@ -33,8 +33,8 @@ export default function Header() {
           <div className="lg:gap-10 gap-5 items-center justify-center hidden lg:flex">
             <div className="relative inline-block group  py-5">
               <Link
-                href="/Wall Decor/all"
-                className="peer font-bold px-[14px] transition-all duration-200 lg:px-2 py-[6px] rounded-full font-area text-[0.8rem] xl:text-[1.125rem]  border border-transparent box-border group-hover:border-black"
+                href="/collections/wall-decor"
+                className="peer font-bold leading-[0.9] px-[14px] transition-all duration-200 lg:px-2 py-[6px] rounded-full font-area text-[0.8rem] xl:text-[1.125rem]  border border-transparent box-border group-hover:border-black"
               >
                 Wall Decor
               </Link>
@@ -44,8 +44,8 @@ export default function Header() {
 
             <div className="relative inline-block group  py-5">
               <Link
-                href="/Home Living/all"
-                className="peer font-bold px-[14px] transition-all duration-200 lg:px-2 py-[6px] rounded-full font-area text-[0.8rem] xl:text-[1.125rem] border border-transparent box-border group-hover:border-black"
+                href="/collections/home-living"
+                className="peer leading-[0.9] font-bold px-[14px] transition-all duration-200 lg:px-2 py-[6px] rounded-full font-area text-[0.8rem] xl:text-[1.125rem] border border-transparent box-border group-hover:border-black"
               >
                 Home & Living
               </Link>
@@ -54,8 +54,8 @@ export default function Header() {
             </div>
             <div className="relative inline-block group  py-5">
               <Link
-                href="/Tech Accessories/all"
-                className="peer font-bold px-[14px] transition-all duration-200 lg:px-2 py-[6px] rounded-full font-area text-[0.8rem] xl:text-[1.125rem] border border-transparent box-border group-hover:border-black"
+                href="/collections/tech-accessories"
+                className="peer leading-[0.9] font-bold px-[14px] transition-all duration-200 lg:px-2 py-[6px] rounded-full font-area text-[0.8rem] xl:text-[1.125rem] border border-transparent box-border group-hover:border-black"
               >
                 Tech & Accessories
               </Link>

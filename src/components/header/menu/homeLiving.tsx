@@ -13,8 +13,9 @@ export default function HomeLiving({
   close: (val: boolean) => void;
 }) {
   const router = useRouter();
-  function handleClick(sub: string) {
-    router.push(`/Home Living/${sub}`);
+  function handleClick(tag: string) {
+    const slug = tag.split(" ").join("-").toLowerCase() + "-home-living";
+    router.push("/collections/" + slug);
     close(false);
   }
   return (
