@@ -33,7 +33,12 @@ export default function Breadcrumb() {
               onClick={() => router.push(`/collections/${collection}`)}
               className="capitalize"
             >
-              • {ele}
+              •{" "}
+              {ele === "Plants Floral" ? (
+                "Plants & Floral"
+              ) : (
+                <>{ele === "Food Drinks" ? "Food & Drinks" : ele}</>
+              )}
             </span>
           </>
         );

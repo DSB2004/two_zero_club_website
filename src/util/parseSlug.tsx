@@ -1,5 +1,7 @@
-export function parseSlug(slug: string): string[] {
-  if (!slug) return [];
+export function parseSlug(s: string): string[] {
+  if (!s) return [];
+
+  const slug = decodeURIComponent(s);
 
   const map: Record<string, string> = {
     "home-living": "Home & Living",

@@ -41,17 +41,19 @@
   ],
   "featured": ["New", "Bestsellers", "Trending", "As Seen on Social"],
   "shop": [
+    "Japandi",
+    "Plants & Floral",
     "Bauhaus",
+    "Food & Drinks",
     "Matisse",
+    "Typography",
     "Pop Art",
+    "Retro Art",
     "Bohemian",
-    "Cottage Core",
-    "Minimal",
-    "Scandinavian",
-    "Bauhaus",
-    "Matisse",
-    "Pop Art",
-    "Bohemian",
-    "Cottage Core"
+    "Abstract",
+    "Mid Century",
+    "Bold Color",
+    "Western",
+    "Street Art"
   ]
 }

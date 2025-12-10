@@ -14,13 +14,17 @@ function TagItem({ active, tag }: { active: boolean; tag: string }) {
   const slug =
     tag === "all"
       ? parseNameToSlug(c)
-      : `${tag.split(" ").join("-").toLowerCase()}-${parseNameToSlug(c)}`;
+      : `${tag
+          .replace(" & ", " ")
+          .split(" ")
+          .join("-")
+          .toLowerCase()}-${parseNameToSlug(c)}`;
 
   return (
     <div
       onClick={() => router.push("/collections/" + slug)}
       className={cn(
-        "font-area cursor-pointer text-[0.8rem] xl:text-[1.125rem] px-[10px] py-[6px]",
+        "font-area cursor-pointer text-[0.8rem] xl:text-[1.125rem] px-[10px] py-[4px]",
         "flex items-center justify-center rounded-full border transition-all duration-200 select-none",
 
         active ? "border-black " : "border-none"
@@ -51,10 +55,10 @@ export default function Tags() {
 
   return (
     <div className="my-2 sm:my-5">
-      <h2 className="text-[2.75rem] font-editorial capitalize">
+      <h2 className="text-[1.5rem] sm:text-[2.75rem] font-editorial capitalize">
         {parts.length === 2 ? parts[1] : parts[0]}
       </h2>
-      <div className="flex space-x-1 sm:space-x-3 flex-wrap">
+      <div className="flex space-x-1 sm:space-x-3 flex-wrap mt-4 sm:mt-2">
         <TagItem active={parts.length === 1} key="all" tag="all"></TagItem>
         {StaticData?.featured?.map((tag, idx) => (
           <TagItem
