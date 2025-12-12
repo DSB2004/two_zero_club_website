@@ -24,15 +24,15 @@ function TagItem({ active, tag }: { active: boolean; tag: string }) {
     <div
       onClick={() => router.push("/collections/" + slug)}
       className={cn(
-        "cursor-pointer",
-        "px-[10px] py-[4px]",
-        "flex items-center justify-center",
-        "rounded-full border transition-all duration-200 select-none",
+        "cursor-pointer select-none",
+        "inline-flex items-center justify-center",
+        "px-2.5 py-1",
+        "rounded-full border transition-all duration-200",
         "leading-none",
         active ? "border-black" : "border-transparent"
       )}
     >
-      <span className="capitalize font-area text-[0.8rem] xl:text-[1.125rem]">
+      <span className="capitalize inline-flex items-center font-area text-[0.8rem] xl:text-[1.125rem]">
         {tag}
       </span>
     </div>
