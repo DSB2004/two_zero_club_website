@@ -1,5 +1,5 @@
 import {
-  AccordionContent,
+  AccordionContent2 as AccordionContent,
   AccordionItem,
   AccordionTrigger2,
 } from "@/components/ui/accordion";

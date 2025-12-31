@@ -21,7 +21,7 @@ export default function Header() {
         <div className="max-w-[1800px] m-auto  px-4 lg:px-16 flex justify-between items-center">
           <div className="relative w-16 xs:w-20 lg:w-26 aspect-square cursor-pointer">
             <Image
-              src="/svg/logo.svg"
+              src="/logo.png"
               alt="logo"
               fill
               draggable={false}
