@@ -19,16 +19,18 @@ export default function Header() {
     <>
       <header className="sticky top-0 bg-white z-[4000]  ">
         <div className="max-w-[1800px] m-auto py-4 px-4 lg:px-16 flex justify-between items-center">
-          <Image
-            draggable={false}
-            onContextMenu={(e) => e.preventDefault()}
-            onClick={() => router.push("/")}
-            src="/svg/logo.svg"
-            alt="logo"
-            height="10"
-            width="10"
-            className=" w-16 xs:w-20 lg:w-26 cursor-pointer"
-          ></Image>
+          <div className="relative w-16 xs:w-20 lg:w-26 aspect-square cursor-pointer">
+            <Image
+              src="/svg/logo.svg"
+              alt="logo"
+              fill
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
+              onClick={() => router.push("/")}
+              className="object-contain"
+              priority
+            />
+          </div>
 
           <div className="lg:gap-10 gap-5 items-center justify-center hidden lg:flex">
             <div className="relative inline-block group py-5 cursor-pointer">
