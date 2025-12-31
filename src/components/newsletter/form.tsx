@@ -56,10 +56,10 @@ export default function NewsletterForm() {
           render={({ field }) => (
             <FormItem className="">
               <FormControl>
-                <div className="bg-[rgba(0,0,0,0.05)] h-[30px]! w-[140px]! md:h-[32px]! md:w-[180px]! xl:h-[44px]! xl:w-[237px]! box-border flex items-center justify-center rounded-full ">
+                <div className="bg-[rgba(0,0,0,0.05)] h-[44px]! w-[237px]! box-border flex items-center justify-center rounded-full ">
                   <input
                     placeholder="Enter your email address"
-                    className=" font-area text-[10px]! md:text-[12px]! xl:text-base! outline-none ring-0 focus:ring-0 focus:outline-none focus-within:ring-0 focus-within:outline-none placeholder:text-[#00000040] leading-[150%]"
+                    className=" font-area text-[12px]! xl:text-base! outline-none ring-0 focus:ring-0 focus:outline-none focus-within:ring-0 focus-within:outline-none placeholder:text-[#00000040] leading-[150%]"
                     {...field}
                   />
                 </div>
@@ -70,9 +70,9 @@ export default function NewsletterForm() {
         <button
           type="submit"
           className="
-    h-[30px]! w-[31.2px]! rounded-full
-    md:h-[36px]! md:w-[37.2px]!
-    xl:h-[45px]! xl:w-[46.7px]!
+
+  h-[45px]! w-[46.7px]!
+  rounded-full
     bg-black
     flex items-center justify-center
   "
@@ -83,9 +83,9 @@ export default function NewsletterForm() {
             width={12}
             height={12}
             className="
-      w-[10px] h-[10px]
-      md:w-[12px] md:h-[12px]
-      xl:w-[12px] xl:h-[12px]
+      rounded-full
+      w-[12px] 
+      h-[12px]
     "
           />
         </button>
