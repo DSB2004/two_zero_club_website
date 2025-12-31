@@ -18,7 +18,7 @@ export default function Header() {
   return (
     <>
       <header className="sticky top-0 bg-white z-[4000]  ">
-        <div className="max-w-[1800px] m-auto py-4 px-4 lg:px-16 flex justify-between items-center">
+        <div className="max-w-[1800px] m-auto  px-4 lg:px-16 flex justify-between items-center">
           <div className="relative w-16 xs:w-20 lg:w-26 aspect-square cursor-pointer">
             <Image
               src="/svg/logo.svg"

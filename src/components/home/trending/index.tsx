@@ -7,12 +7,12 @@ import CardCarousel from "./carousel";
 import StaticData from "@/assets/static/home.static.json";
 export default function Trending() {
   return (
-    <section className="max-w-[1800px] px-4 lg:px-16  w-full m-auto my-8 md:my-20 space-y-[1.5rem]">
-      <h2 className="text-[2rem] sm:text-[2.25rem] lg:text-[2.75rem] font-editorial">
+    <section className="max-w-[1800px] px-4 lg:px-16  w-full m-auto  my-0 mt-[50px] md:my-20 space-y-[1.5rem]">
+      <h2 className=" text-[2rem] sm:text-[2.25rem] lg:text-[2.75rem] font-editorial">
         {"What's Trending"}
       </h2>
       <div
-        className="hidden sm:grid 
+        className="grid  my-[50px] sm:my-0
       sm:grid-cols-2
        xl:grid-cols-4 place-items-start gap-4 "
       >
@@ -21,12 +21,12 @@ export default function Trending() {
         })}
       </div>
 
-      <div
-        className="block sm:hidden
+      {/* <div
+        className="block sm:hidden mt-[50px] sm:mt-0
      "
       >
         <CardCarousel data={StaticData.trending ?? []}></CardCarousel>
-      </div>
+      </div> */}
     </section>
   );
 }

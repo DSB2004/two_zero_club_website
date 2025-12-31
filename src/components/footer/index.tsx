@@ -4,14 +4,14 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-green pt-[53px] pb-[34px] ">
-      <div className="max-w-[1800px]  m-auto px-5 md:px-20 xl:px-32 flex justify-evenly items-start flex-wrap ">
+      <div className="max-w-[1800px]  m-auto px-5 md:px-20 xl:px-32 flex justify-evenly items-start flex-wrap space-y-[25px] sm:space-y-[0px]">
         <div className="flex flex-col gap-[20px] w-1/2 lg:w-1/4  ">
           <h2 className="font-editorial text-[1.4rem] sm:text-[1.625rem]">
             Shop
           </h2>
           <ul className="!p-0 text-[1rem] sm:text-[1.125rem] flex flex-col font-area">
             <Link href="/collections/new">New</Link>
-            <Link href="/collections/bestsellers">Bestsellers</Link>
+            <Link href="/collections/bestseller">Bestseller</Link>
             <Link href="/collections/trending">Trending</Link>
             <Link href="/collections/as-seen-on-social">As seen on social</Link>
           </ul>

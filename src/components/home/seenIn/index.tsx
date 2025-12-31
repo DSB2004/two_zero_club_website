@@ -14,7 +14,7 @@ export default function SeenIn() {
         ))}
       </div>
 
-      <div className="xl:hidden overflow-hidden relative">
+      <div className="xl:hidden overflow-hidden relative my-[50px]">
         <div className="flex items-center animate-marquee w-max !gap-8 md:!gap-10">
           {StaticData.seenIn.concat(StaticData.seenIn).map((ele, id) => (
             <div className="flex-shrink-0" key={id}>

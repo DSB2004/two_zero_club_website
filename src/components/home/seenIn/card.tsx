@@ -13,9 +13,9 @@ export default function SeenInCard(data: IPROPS) {
       onContextMenu={(e) => e.preventDefault()}
       src={data.thumbnail}
       alt={data.id.toString()}
-      height="500"
+      height="200"
       width="500"
-      className="h-auto aspect-[3/4] w-[160px]"
+      className="aspect-[16/9] w-[160px] "
     />
   );
 }

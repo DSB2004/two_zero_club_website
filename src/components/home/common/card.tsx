@@ -34,7 +34,7 @@ export default function CollectionCard(data: IPROPS) {
         />
       )}
 
-      <div className="space-y-[5px]">
+      <div className="mt-[25px] sm:mt-[0px] space-y-[5px]">
         <h2 className="text-[1.5rem] font-area font-bold font-area">{title}</h2>
         <p className=" font-area leading-[120%]  line-clamp-2 w-[90%]">
           {description}
