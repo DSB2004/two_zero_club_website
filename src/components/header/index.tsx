@@ -39,7 +39,7 @@ export default function Header() {
                 className="peer font-bold  px-[10px] transition-all duration-200  py-[6px]! rounded-full font-area text-[0.8rem] xl:text-[1.125rem]  border border-transparent box-border group-hover:border-black   flex items-center justify-center   
         leading-none  "
               >
-                <span className="font-bold font-area text-[0.8rem] xl:text-[1.125rem] ">
+                <span className="p-[2px] font-bold font-area text-[0.8rem] xl:text-[1.125rem] ">
                   Wall Decor
                 </span>
               </p>
@@ -52,7 +52,7 @@ export default function Header() {
                 className="peer font-bold  px-[10px] transition-all duration-200  py-[6px]! rounded-full font-area text-[0.8rem] xl:text-[1.125rem]  border border-transparent box-border group-hover:border-black  flex items-center justify-center   
         leading-none "
               >
-                <span className="font-bold font-area text-[0.8rem] xl:text-[1.125rem] ">
+                <span className="p-[2px] font-bold font-area text-[0.8rem] xl:text-[1.125rem] ">
                   Home & Living
                 </span>
               </p>
@@ -64,7 +64,7 @@ export default function Header() {
                 className="peer font-bold  px-[10px] transition-all duration-200  py-[6px]! rounded-full font-area text-[0.8rem] xl:text-[1.125rem]  border border-transparent box-border group-hover:border-black  flex items-center justify-center   
         leading-none "
               >
-                <span className="font-bold font-area text-[0.8rem] xl:text-[1.125rem] ">
+                <span className="p-[2px] font-bold font-area text-[0.8rem] xl:text-[1.125rem] ">
                   Tech & Accessories
                 </span>
               </p>

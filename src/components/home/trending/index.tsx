@@ -12,9 +12,9 @@ export default function Trending() {
         {"What's Trending"}
       </h2>
       <div
-        className="grid  my-[50px] sm:my-0
+        className="grid my-[25px] sm:my-0
       sm:grid-cols-2
-       xl:grid-cols-4 place-items-start gap-4 "
+       xl:grid-cols-4 place-items-start gap-[25px] "
       >
         {StaticData.trending?.map((ele, idx) => {
           return <TrendingCard idx={idx} {...ele} key={ele.id.toString()} />;

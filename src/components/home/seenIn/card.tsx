@@ -15,7 +15,7 @@ export default function SeenInCard(data: IPROPS) {
       alt={data.id.toString()}
       height="200"
       width="500"
-      className="aspect-[16/9] w-[160px] "
+      className="w-[160px] "
     />
   );
 }
