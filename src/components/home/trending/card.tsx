@@ -19,7 +19,7 @@ export default function TrendingCard(data: IPROPS) {
   const { idx, collection, title, description, image } = data;
   const { push } = useRouter();
   return (
-    <div className="flex flex-col space-y-[20px] w-full ">
+    <div className="flex flex-col space-y-[25px] w-full ">
       {image && (
         <Image
           draggable={false}
@@ -35,7 +35,9 @@ export default function TrendingCard(data: IPROPS) {
         <h2 className="text-[1.5rem] font-area font-bold font-area line-clamp-1">
           {title}
         </h2>
-        <p className=" font-area leading-[120%] line-clamp-2 w-[90%]">{description}</p>
+        <p className=" font-area leading-[120%] line-clamp-2 w-[90%]">
+          {description}
+        </p>
       </div>
 
       <Button

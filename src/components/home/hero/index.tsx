@@ -36,22 +36,7 @@ font-area
           <span className=" inline-flex -translate-y-[1px]">Explore</span>
         </Button>
       </div>
-      <div
-        className="
-        sm:hidden block
-    w-full h-[400px] 
-    md:w-[400px] 
-    lg:w-[700px] 
-    xl:w-[900px] 
-    rounded-[10px] 
-    bg-cover 
-    bg-center 
-    bg-no-repeat
-  "
-        style={{
-          backgroundImage: "url('/images/hero.png')",
-        }}
-      ></div>
+
       <Image
         draggable={false}
         onContextMenu={(e) => e.preventDefault()}
@@ -59,7 +44,17 @@ font-area
         alt="hero-image"
         width="1200"
         height="1000"
-        className=" w-full  hidden aspect-[4/3] sm:block md:w-[400px] lg:w-[500px] 2xl:w-[700px]  rounded-[10px]"
+        className=" w-full hidden sm:block aspect-[2/2] sm:aspect-[3/2] md:w-[400px] lg:w-[500px] 2xl:w-[900px]  rounded-[10px]"
+      ></Image>
+
+      <Image
+        draggable={false}
+        onContextMenu={(e) => e.preventDefault()}
+        src="/images/hero-sm.png"
+        alt="hero-image"
+        width="1200"
+        height="1000"
+        className=" w-full sm:hidden block  aspect-square  md:w-[400px] lg:w-[500px] 2xl:w-[900px]  rounded-[10px]"
       ></Image>
     </section>
   );

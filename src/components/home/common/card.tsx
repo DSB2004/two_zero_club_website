@@ -22,17 +22,15 @@ export default function CollectionCard(data: IPROPS) {
       className="w-full space-y-[20px]!"
       href={`/collections/${collection}`}
     >
-      {image && (
-        <Image
-          draggable={false}
-          onContextMenu={(e) => e.preventDefault()}
-          src={image}
-          alt={"collection"}
-          height={400}
-          width={600}
-          className="w-full aspect-[4/3] rounded-2xl pointer-events-none object-cover "
-        />
-      )}
+      <Image
+        draggable={false}
+        onContextMenu={(e) => e.preventDefault()}
+        src={image}
+        alt={"collection"}
+        height={400}
+        width={600}
+        className="w-full aspect-auto rounded-2xl pointer-events-none object-cover "
+      />
 
       <div className="mt-[25px] sm:mt-[0px] space-y-[5px]">
         <h2 className="text-[1.5rem] font-area font-bold font-area">{title}</h2>

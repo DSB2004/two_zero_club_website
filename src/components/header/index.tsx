@@ -21,7 +21,7 @@ export default function Header() {
         <div className="max-w-[1800px] m-auto  px-4 lg:px-16 flex justify-between items-center">
           <div className="relative w-16 xs:w-20 lg:w-26 aspect-square cursor-pointer">
             <Image
-              src="/svg/logo.svg"
+              src="/logo.png"
               alt="logo"
               fill
               draggable={false}
@@ -39,7 +39,7 @@ export default function Header() {
                 className="peer font-bold  px-[10px] transition-all duration-200  py-[6px]! rounded-full font-area text-[0.8rem] xl:text-[1.125rem]  border border-transparent box-border group-hover:border-black   flex items-center justify-center   
         leading-none  "
               >
-                <span className="font-bold font-area text-[0.8rem] xl:text-[1.125rem] ">
+                <span className="p-[2px] font-bold font-area text-[0.8rem] xl:text-[1.125rem] ">
                   Wall Decor
                 </span>
               </p>
@@ -52,7 +52,7 @@ export default function Header() {
                 className="peer font-bold  px-[10px] transition-all duration-200  py-[6px]! rounded-full font-area text-[0.8rem] xl:text-[1.125rem]  border border-transparent box-border group-hover:border-black  flex items-center justify-center   
         leading-none "
               >
-                <span className="font-bold font-area text-[0.8rem] xl:text-[1.125rem] ">
+                <span className="p-[2px] font-bold font-area text-[0.8rem] xl:text-[1.125rem] ">
                   Home & Living
                 </span>
               </p>
@@ -64,7 +64,7 @@ export default function Header() {
                 className="peer font-bold  px-[10px] transition-all duration-200  py-[6px]! rounded-full font-area text-[0.8rem] xl:text-[1.125rem]  border border-transparent box-border group-hover:border-black  flex items-center justify-center   
         leading-none "
               >
-                <span className="font-bold font-area text-[0.8rem] xl:text-[1.125rem] ">
+                <span className="p-[2px] font-bold font-area text-[0.8rem] xl:text-[1.125rem] ">
                   Tech & Accessories
                 </span>
               </p>

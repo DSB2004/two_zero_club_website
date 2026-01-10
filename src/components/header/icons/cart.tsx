@@ -8,7 +8,7 @@ export default function CartIcon(props: any) {
       alt="Cart"
       height={50}
       width={50}
-      src={"/svg/cart.svg"}
+      src={"/cart.png"}
       {...props}
     ></Image>
   );

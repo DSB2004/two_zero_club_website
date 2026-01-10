@@ -1,5 +1,5 @@
 import {
-  AccordionContent,
+  AccordionContent2,
   AccordionItem,
   AccordionTrigger2,
 } from "@/components/ui/accordion";
@@ -23,7 +23,7 @@ export default function WallDecor({
       <AccordionTrigger2 className="  !text-[1.125rem] font-area !font-black">
         Wall Decor
       </AccordionTrigger2>
-      <AccordionContent className="flex flex-col gap-4 font-area max-h-[10000px] overflow-y-auto !text-[1rem]">
+      <AccordionContent2 className="flex flex-col gap-4 font-area max-h-[10000px] overflow-y-auto !text-[1rem] px-0!">
         <div className="pl-0 font-area cursor-pointer flex flex-col gap-1">
           <li onClick={() => handleClick("Art Print")}>Art Prints</li>
           <li onClick={() => handleClick("Framed Print")}>Framed Prints</li>
@@ -43,7 +43,7 @@ export default function WallDecor({
           width="750"
           height="500"
         ></Image>
-      </AccordionContent>
+      </AccordionContent2>
     </AccordionItem>
   );
 }
