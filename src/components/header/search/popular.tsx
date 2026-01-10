@@ -13,7 +13,7 @@ export default function Popular({
   };
   return (
     <div className=" w-full   border-r-1 border-b-1 pb-4 lg:pb-0 lg:pr-2 pr-0  border-b-black/50 border-r-transparent lg:border-b-transparent lg:border-r-black/50 ">
-      <h2 className="text-[1.4rem] font-area font-bold mb-5">
+      <h2 className="text-[1.375rem] font-area font-bold mb-5">
         Popular Products
       </h2>
       <ul className="pl-0  font-area cursor-pointer">

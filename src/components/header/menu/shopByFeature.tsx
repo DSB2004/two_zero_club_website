@@ -28,7 +28,7 @@ export default function ShopByFeature({
           href="/collections/bestsellers"
           className="text-[1rem] font-area font-extrabold "
         >
-          BestSellers
+          Bestsellers
         </Link>
         <Link
           onClick={() => close(false)}

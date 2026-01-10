@@ -11,7 +11,7 @@ export default function Footer() {
           </h2>
           <ul className="!p-0 text-[1rem] sm:text-[1.125rem] flex flex-col font-area">
             <Link href="/collections/new">New</Link>
-            <Link href="/collections/bestseller">Bestseller</Link>
+            <Link href="/collections/bestsellers">Bestsellers</Link>
             <Link href="/collections/trending">Trending</Link>
             <Link href="/collections/as-seen-on-social">As seen on social</Link>
           </ul>

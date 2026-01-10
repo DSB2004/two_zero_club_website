@@ -43,9 +43,7 @@ function TagItem({
         active ? "border-black" : "border-transparent"
       )}
     >
-     
-
-      <span className="capitalize  -translate-y-[0.6px]  inline-flex items-center font-area text-[0.8rem] xl:text-[1.125rem]">
+      <span className="capitalize  pb-[3px]  inline-flex items-center font-area text-[0.8rem] xl:text-[1.125rem]">
         {tag.label}
       </span>
     </div>

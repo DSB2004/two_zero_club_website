@@ -11,21 +11,23 @@ import { Product } from "@/lib/shopify/types";
 export default function Description(data: Product) {
   return (
     <div>
-      <p className="font-area  text-[0.85rem] sm:text-[1rem] leading-[120%]">
-        {data.description}
-      </p>
-
-      <div className="grid grid-cols-2 mt-2 sm:mt-5 gap-2  m-auto">
+      <div className="font-area">
+        <p
+          className="blog-content  prose max-w-full"
+          dangerouslySetInnerHTML={{ __html: data.descriptionHtml }}
+        />
+      </div>
+      <div className="grid grid-cols-2 my-6 sm:mt-5 gap-2  m-auto">
         <div className="bg-[#ECF4EC] rounded-[0.625rem]  p-4 flex-col w-full flex items-center justify-center gap-2">
           <Image
             draggable={false}
             onContextMenu={(e) => e.preventDefault()}
             src="/svg/paint.svg"
             alt=""
-            height={30}
+            height={32}
             width={30}
           ></Image>
-          <p className="text-[0.875rem] font-area px-3 text-center pt-1 leading-[100%]">
+          <p className="text-[0.75rem] sm:text-[0.875rem] font-area px-3 text-center pt-1 leading-[100%]">
             Custom made to order
           </p>
         </div>
@@ -35,10 +37,10 @@ export default function Description(data: Product) {
             onContextMenu={(e) => e.preventDefault()}
             src="/svg/truck.svg"
             alt=""
-            height={30}
-            width={30}
+            height={20}
+            width={35}
           ></Image>
-          <p className="text-[0.875rem] font-area px-3 text-center pt-1 leading-[100%]">
+          <p className="text-[0.75rem] sm:text-[0.875rem] font-area px-3 text-center pt-1 leading-[100%]">
             Fast International Shipping
           </p>
         </div>
@@ -48,10 +50,10 @@ export default function Description(data: Product) {
             onContextMenu={(e) => e.preventDefault()}
             src="/svg/box.svg"
             alt=""
-            height={30}
-            width={30}
+            height={35}
+            width={32}
           ></Image>
-          <p className="text-[0.875rem] font-area px-3 text-center pt-1 leading-[100%]">
+          <p className="text-[0.75rem] sm:text-[0.875rem] font-area px-3 text-center pt-1 w-[75%] leading-[100%]">
             Easy 14-Day Returns*
           </p>
         </div>
@@ -59,12 +61,12 @@ export default function Description(data: Product) {
           <Image
             draggable={false}
             onContextMenu={(e) => e.preventDefault()}
-            src="/svg/paint.svg"
+            src="/svg/hand.svg"
             alt=""
-            height={30}
-            width={30}
+            height={33}
+            width={33}
           ></Image>
-          <p className="text-[0.875rem] font-area px-3 text-center pt-1 leading-[100%]">
+          <p className="text-[0.75rem] sm:text-[0.875rem] font-area px-3 text-center pt-1 leading-[100%]">
             Support Independent artists
           </p>
         </div>

@@ -32,9 +32,9 @@ export default function CollectionCard(data: IPROPS) {
         className="w-full aspect-auto rounded-2xl pointer-events-none object-cover "
       />
 
-      <div className="mt-[25px] sm:mt-[0px] space-y-[5px]">
+      <div className="space-y-[5px]">
         <h2 className="text-[1.5rem] font-area font-bold font-area">{title}</h2>
-        <p className=" font-area leading-[120%]  line-clamp-2 w-[90%]">
+        <p className=" font-area leading-[120%] text-[0.875rem] sm:text-base line-clamp-none sm:line-clamp-2 w-[95%]">
           {description}
         </p>
       </div>

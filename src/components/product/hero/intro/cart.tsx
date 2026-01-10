@@ -20,7 +20,7 @@ export default function Cart() {
     <Button
       disabled={isPending}
       onClick={handleClick}
-      className="bg-[#F33C14] hover:bg-[#ee3b13] flex items-center justify-center font-area rounded-full text-[0.9rem] md:text-[1rem] font-semibold px-5  flex-1 !h-[40px]"
+      className="bg-[#F33C14] hover:bg-[#ee3b13] flex items-center justify-center font-area rounded-full text-[1rem] font-semibold px-5 !w-[auto]  flex-1 !h-[45px] sm:!h-[40px]"
     >
       {isPending ? (
         <>
@@ -36,7 +36,7 @@ export default function Cart() {
             alt="basket"
             width={18}
             height={21}
-            className="h-[21px] w-[18]"
+            className="h-[21px] w-[18px]"
           ></Image>
         </>
       )}

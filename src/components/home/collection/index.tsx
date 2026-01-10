@@ -8,7 +8,11 @@ export default function Collection() {
       <h2 className="text-[2rem]  sm:text-[2.25rem] lg:text-[2.75rem] font-editorial">
         Shop by Collection
       </h2>
-      <div className="m-auto grid grid-cols-1 md:grid-cols-2 gap-[50px] sm:gap-[12.5px] ">
+      <div
+        className="grid my-[25px] sm:my-0
+      sm:grid-cols-2
+        place-items-start gap-[50px] sm:gap-[25px]   "
+      >
         {StaticData.collections.map((ele, idx) => (
           <CollectionCard
             idx={idx}

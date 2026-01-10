@@ -36,7 +36,7 @@ export default function Card(data: any) {
         {title}
       </h2>
       <p className="text-[14px] leading-[120%] sm:text-[1.125rem] font-area font-light mt-[10px]">
-        From ${price}
+        From ${Number(price).toFixed(2)}
       </p>
     </div>
   );

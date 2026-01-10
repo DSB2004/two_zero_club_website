@@ -8,11 +8,10 @@ import { useBlogsStore } from "@/store/blogs.store";
 export default function Newsletter() {
   const { articles, isLoading, isFetching } = useBlogsStore();
   return (
-    <section className="max-w-[1800px] px-4 lg:px-16  w-full m-auto my-8 md:my-20">
+    <section className="max-w-[1800px] px-4 lg:px-16  w-full m-auto py-[25px] md:my-20">
       <div
-        className="hidden md:grid 
-          
-            grid-cols-3 place-items-start gap-4 "
+        className="grid 
+          grid-cols-1 sm:grid-cols-3 place-items-start gap-[25px] "
       >
         {articles?.map((ele, idx) => {
           return (
@@ -22,13 +21,6 @@ export default function Newsletter() {
             />
           );
         })}
-      </div>
-
-      <div
-        className="block md:hidden
-          "
-      >
-        <CardCarousel data={articles}></CardCarousel>
       </div>
     </section>
   );

@@ -37,7 +37,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
           {title}
         </h2>
         <p
-          className=" font-area leading-[120%]  line-clamp-2 w-[90%]"
+          className=" font-area leading-[120%] text-[0.875rem] sm:text-base line-clamp-none sm:line-clamp-2 w-[95%]"
           dangerouslySetInnerHTML={{ __html: excerpt }}
         />
       </div>

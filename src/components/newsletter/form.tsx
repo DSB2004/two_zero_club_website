@@ -56,7 +56,7 @@ export default function NewsletterForm() {
           render={({ field }) => (
             <FormItem className="">
               <FormControl>
-                <div className="bg-[rgba(0,0,0,0.05)] h-[44px]! w-[237px]! box-border flex items-center justify-center rounded-full ">
+                <div className="bg-[rgba(0,0,0,0.05)] h-[44px]! w-[280px]! [min-width:450px]:w-[350px]!  sm:w-[237px]! box-border flex items-center justify-center rounded-full ">
                   <input
                     placeholder="Enter your email address"
                     className=" font-area text-[12px]! xl:text-base! outline-none ring-0 focus:ring-0 focus:outline-none focus-within:ring-0 focus-within:outline-none placeholder:text-[#00000040] leading-[150%]"

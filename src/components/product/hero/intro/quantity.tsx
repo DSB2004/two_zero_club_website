@@ -4,7 +4,7 @@ import { Plus, Minus } from "lucide-react";
 export default function Quantity() {
   const { quantity, setQuantity } = useProduct();
   return (
-    <div className=" flex items-center px-2 rounded-full border border-black w-28 sm:w-32  !h-[40px]">
+    <div className=" flex items-center px-2 rounded-full border border-black w-28 sm:w-32  !h-[45px]  sm:!h-[40px]">
       <Minus
         className="size-3 cursor-pointer"
         onClick={() => setQuantity((q) => (q > 1 ? q - 1 : 1))}
