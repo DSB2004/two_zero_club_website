@@ -76,9 +76,10 @@ export default function Description(data: Product) {
         className="border-t-2 border-black mt-2 sm:mt-5"
       >
         <AccordionItem value="item-1" className="!border-b-2 border-black">
-          <AccordionTrigger className="  !py-3 !text-[1rem] font-area !font-extrabold">
-            Details
+          <AccordionTrigger className="!py-3 !text-[1rem] font-area leading-none !font-extrabold flex items-center align-center ">
+            <span className="leading-none -translate-y-[1.5px]">Details</span>
           </AccordionTrigger>
+
           <AccordionContent className="flex flex-col gap-4 font-area max-h-50 overflow-y-auto !text-[0.8rem] sm:text-[1rem]!">
             <p className="w-fit">
               This product is crafted with quality materials to ensure
@@ -88,8 +89,10 @@ export default function Description(data: Product) {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2" className="!border-b-2 border-black">
-          <AccordionTrigger className="  !py-3  !text-[1rem] font-area !font-extrabold">
-            Shipping & Returns
+          <AccordionTrigger className="!py-3 !text-[1rem] font-area leading-none !font-extrabold flex items-center align-center">
+            <span className="leading-none -translate-y-[1.5px]">
+              Shipping & Returns
+            </span>
           </AccordionTrigger>
           <AccordionContent className="flex max-h-[600px] flex-col gap-4 font-area  overflow-y-auto !text-[0.8rem] sm:text-[1rem]! ">
             <p className="w-fit">
