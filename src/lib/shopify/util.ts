@@ -102,6 +102,13 @@ export const reshapeProduct = (
   }
 
   const { images, variants, collections, ...rest } = product;
+  console.log({
+    ...rest,
+    images: reshapeImages(images, product.title),
+    variants: removeEdgesAndNodes(variants),
+    // @ts-ignore
+    collection: removeEdgesAndNodes(collections)[0].handle ?? "",
+  });
   return {
     ...rest,
     images: reshapeImages(images, product.title),
@@ -137,7 +144,7 @@ import { ShopifyArticle } from "./types";
 
 export const reshapeArticles = (blogs: any[]): ShopifyArticle[] => {
   const allArticles: ShopifyArticle[] = [];
-  
+
   blogs.forEach((blog) => {
     const articlesEdges = blog.articles?.edges || [];
     articlesEdges.forEach((edge: any) => {

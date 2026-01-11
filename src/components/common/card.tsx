@@ -40,7 +40,7 @@ export default function ProductCard({
         {title}
       </h2>
       <p className="text-[14px] sm:text-[1.125rem] font-area font-light mt-1">
-        From ${price}
+        From ${Number(price).toFixed(2)}
       </p>
     </Link>
   );

@@ -16,7 +16,7 @@ export default function Intro({ data }: { data: Product }) {
     <div className="static top-0 pr-0 md:pr-8 md:sticky md:top-[110px] w-full md:w-1/2 xl:w-[28%] self-start ">
       <div className="  flex gap-1 flex-col ">
         <Breadcrump data={data}></Breadcrump>
-        <h1 className="font-editorial text-[1.25rem] font-[400]  sm:text-[1.5rem] lg:text-[2.125rem] tracking-[-2%] leading-[26px] sm:leading-[34px]">
+        <h1 className="font-editorial font-[400]  text-[2.125rem] tracking-[-2%] leading-[34px]">
           {data.title}
         </h1>
         <Price data={data}></Price>

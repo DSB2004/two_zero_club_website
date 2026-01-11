@@ -67,7 +67,7 @@ export default function Grid() {
   return (
     <>
       {products.length > 0 ? (
-        <div className="grid grid-cols-2 gap-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 lg:gap-5 space-y-5">
+        <div className="grid grid-cols-2 gap-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 lg:gap-5 space-y-5 mb-4">
           {products.map((product) => (
             <Card key={product.id} {...product} />
           ))}

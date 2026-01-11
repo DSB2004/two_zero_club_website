@@ -14,23 +14,27 @@ export default function Checkout() {
         if (!variant || quantity < 1) return;
         buy({ merchandiseId: variant.id, quantity });
       }}
-      className="bg-[#5433EB] hover:bg-[#5031db] font-area rounded-full text-[0.9rem] md:text-[1rem] font-semibold px-5  w-full !h-[45px]"
+      className="bg-[#5433EB] hover:bg-[#5031db] font-area rounded-full text-[1rem] font-semibold px-5  w-full !h-[45px] sm:!h-[40px] relative !gap-0"
     >
+      {/* <div className="absolute top-1/2 -translate-y-[1/2] border border-black w-full"></div>
+
+      <div className="absolute inset-y-0 left-1/2 w-px bg-black" /> */}
+
       {loading ? (
         <>
           <Loader className="animate-spin duration-500"></Loader>
         </>
       ) : (
         <>
-          <span className="-translate-y-[1px]">Pay with</span>
+          <span className="-translate-[1.75px]">Pay with</span>
           <Image
             draggable={false}
             onContextMenu={(e) => e.preventDefault()}
             src="/svg/shop-pay.svg"
             alt="basket"
-            width={86}
-            height={20}
-            className=" h-[15px] w-[60px] md:h-[20px] md:w-[86px]"
+            width={100}
+            height={100}
+            className="h-[20px]"
           ></Image>
         </>
       )}

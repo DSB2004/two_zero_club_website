@@ -122,10 +122,10 @@ export default function Clothing() {
             <Image
               draggable={false}
               onContextMenu={(e) => e.preventDefault()}
-              className="h-full max-h-[400px]  rounded-sm aspect-[3/4] pointer-events-none object-cover "
+              className=" pointer-events-none object-cover "
               src={"/images/hover/clothing.png"}
               alt="menu-image"
-              width="400"
+              width="1000"
               height="1000"
             ></Image>
           </div>

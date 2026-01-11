@@ -20,10 +20,10 @@ export default function HomeLiving({
   }
   return (
     <AccordionItem value="item-2" className="!border-b-1 border-black/50">
-      <AccordionTrigger2 className="  !text-[1.125rem] font-area !font-black">
+      <AccordionTrigger2 className=" !text-[1.375rem] font-area !font-black">
         Home & Living
       </AccordionTrigger2>
-      <AccordionContent className="flex flex-col gap-2 font-area max-h-[10000px] overflow-y-auto !text-[1rem]">
+      <AccordionContent className="flex flex-col gap-2 font-area max-h-[10000px] overflow-y-auto !text-[1.125rem]">
         <h2 className="text-[10px] font-bold  font-area text-[#F33C14]">
           LIVING ROOM
         </h2>

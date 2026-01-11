@@ -1,21 +1,23 @@
 "use client";
-import React from "react";
+
 import Image from "next/image";
+
 interface IPROPS {
   thumbnail: string;
   id: number;
 }
 
-export default function SeenInCard(data: IPROPS) {
+export default function SeenInCard({ thumbnail, id }: IPROPS) {
   return (
-    <Image
-      draggable={false}
-      onContextMenu={(e) => e.preventDefault()}
-      src={data.thumbnail}
-      alt={data.id.toString()}
-      height="200"
-      width="500"
-      className="w-[160px] "
-    />
+    <div className="relative w-[160px] h-[80px] flex items-center justify-center">
+      <Image
+        src={thumbnail}
+        alt={`seen-in-${id}`}
+        fill
+        draggable={false}
+        onContextMenu={(e) => e.preventDefault()}
+        className="object-contain"
+      />
+    </div>
   );
 }

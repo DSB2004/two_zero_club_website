@@ -14,7 +14,9 @@ export default function Colors({
   };
   return (
     <div className=" w-full    border-b-1 pb-4 lg:pb-0  lg:border-b-transparent   border-black/50">
-      <h2 className="text-[1.4rem] font-area font-bold mb-5">Shop by Color</h2>
+      <h2 className="text-[1.375rem] font-area font-bold mb-5">
+        Shop by Color
+      </h2>
       <h2 className="text-[14px] font-bold text-[#064BD6] font-area mb-2">
         CLASSICS
       </h2>
