@@ -14,7 +14,7 @@ export default function HomeLiving({
 }) {
   const router = useRouter();
   function handleClick(tag: string) {
-    const slug = tag.split(" ").join("-").toLowerCase() + "-home-living";
+    const slug = tag + "-home-living";
     router.push("/collections/" + slug);
     close(false);
   }
@@ -28,26 +28,26 @@ export default function HomeLiving({
           LIVING ROOM
         </h2>
         <ul className="pl-0 font-area cursor-pointer">
-          <li onClick={() => handleClick("Rugs")}>Rugs</li>
-          <li onClick={() => handleClick("Throw Blankets")}>Throw Blankets </li>
-          <li onClick={() => handleClick("Throw Pillows")}>Throw Pillows </li>
-          <li onClick={() => handleClick("Wall Clocks")}>Wall Clocks </li>
-          <li onClick={() => handleClick("Tapestries")}>Tapestries</li>
+          <li onClick={() => handleClick("rugs")}>Rugs</li>
+          <li onClick={() => handleClick("throw-blankets")}>Throw Blankets </li>
+          <li onClick={() => handleClick("throw-pillows")}>Throw Pillows </li>
+          {/* <li onClick={() => handleClick("wall-clocks")}>Wall Clocks </li> */}
+          <li onClick={() => handleClick("tapestries")}>Tapestries</li>
         </ul>
         <h2 className="text-[10px] font-bold  font-area text-[#08814E]">
           BEDROOM
         </h2>
         <ul className="pl-0 font-area">
-          <li onClick={() => handleClick("Duvet Covers")}>Duvet Covers</li>
-          <li onClick={() => handleClick("Pillow Covers")}>Pillow Covers</li>
+          <li onClick={() => handleClick("duvet-covers")}>Duvet Covers</li>
+          <li onClick={() => handleClick("pillow-covers")}>Pillow Covers</li>
         </ul>
         <h2 className="text-[10px] font-bold  font-area text-[#064BD6]">
           BATHROOM
         </h2>
         <ul className="pl-0 font-area">
-          <li onClick={() => handleClick("Bath Mats")}>Bath Mats</li>
-          <li onClick={() => handleClick("Towels")}>Towels </li>
-          <li onClick={() => handleClick("Shower Curtains")}>
+          <li onClick={() => handleClick("bath-mats")}>Bath Mats</li>
+          <li onClick={() => handleClick("towels")}>Towels </li>
+          <li onClick={() => handleClick("shower-curtains")}>
             Shower Curtains
           </li>
         </ul>

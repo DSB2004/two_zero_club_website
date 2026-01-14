@@ -13,28 +13,9 @@ export default function Tags() {
 
   return (
     <div className="my-2 sm:my-5">
-      <h2 className="text-[2.75rem] font-editorial">Results for “{q}”</h2>
-      {/* <div className="flex space-x-1 sm:space-x-3 flex-wrap">
-        {StaticData?.featured?.map((tag, idx) => (
-          <Link
-            href={"/" + "footer" + "/" + tag}
-            key={`featured-${idx}`}
-            className={`font-area text-[0.8rem] xl:text-[1.125rem] px-3 min-w-14 text-center py-0.5 rounded-full  `}
-          >
-            {tag}
-          </Link>
-        ))} */}
-
-      {/* {StaticData?.shop?.map((tag, idx) => (
-          <Link
-            href={"/" + collection + "/" + tag}
-            key={`shop-${idx}`}
-            className={`font-area text-[0.8rem] xl:text-[1.125rem] px-3 min-w-14 text-center py-0.5 rounded-full `}
-          >
-            {tag}
-          </Link>
-        ))} */}
-      {/* </div> */}
+      <h2 className="text-[1.5rem] sm:text-[2.75rem] font-editorial capitalize">
+        Results for “{q}”
+      </h2>
     </div>
   );
 }

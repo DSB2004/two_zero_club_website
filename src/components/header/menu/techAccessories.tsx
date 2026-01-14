@@ -11,7 +11,7 @@ export default function Tech({ close }: { close: (val: boolean) => void }) {
   const router = useRouter();
 
   function handleClick(tag: string) {
-    const slug = tag.split(" ").join("-").toLowerCase() + "-tech-accessories";
+    const slug = tag + "-tech-accessories";
     router.push("/collections/" + slug);
     close(false);
   }
@@ -22,10 +22,10 @@ export default function Tech({ close }: { close: (val: boolean) => void }) {
       </AccordionTrigger2>
       <AccordionContent className="flex flex-col gap-4 font-area max-h-[10000px] overflow-y-auto !text-[1.125rem]">
         <div className="pl-0 font-area cursor-pointer flex flex-col gap-1">
-          <li onClick={() => handleClick("Phone Cases")}>Phone Cases</li>
-          <li onClick={() => handleClick("Desk Mats")}>Desk Mats </li>
-          <li onClick={() => handleClick("Notebooks")}>Notebooks </li>
-          <li onClick={() => handleClick("Stickers")}>Stickers</li>
+          <li onClick={() => handleClick("phone-cases")}>Phone Cases</li>
+          <li onClick={() => handleClick("desk-mats")}>Desk Mats</li>
+          <li onClick={() => handleClick("notebooks")}>Notebooks</li>
+          <li onClick={() => handleClick("stickers")}>Stickers</li>
         </div>
         <ShopByColor click={handleClick}></ShopByColor>
         <Image

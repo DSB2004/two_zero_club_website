@@ -17,23 +17,25 @@ export default function Breadcrumb() {
   const categoryKeys = MenuData.categories[categorySlug] ?? [];
 
   return (
-    <h4 className="font-area text-[0.75rem] sm:text-[1rem] lg:text-[1.125rem] font-bold flex gap-2 cursor-pointer">
+    <h4 className="font-area text-[0.75rem] sm:text-[1rem] lg:text-[1.125rem] font-bold gap-1 flex cursor-pointer">
       <span onClick={() => router.push("/")}>Home</span>
+
       {parts[0].toLowerCase() === "footer" ? (
         <></>
       ) : (
         <>
+          <span>•</span>
           <span
             onClick={() => router.push(`/collections/${toSlug(parts[0])}`)}
             className="capitalize"
           >
-            • {prettifyTagName(parts[0])}
+            {prettifyTagName(parts[0])}
           </span>
         </>
       )}
-
       {categoryKeys.includes(toSlug(subCategoryOrFilter)) ? (
         <>
+          <span>•</span>
           <span
             onClick={() =>
               router.push(
@@ -44,14 +46,15 @@ export default function Breadcrumb() {
             }
             className="capitalize"
           >
-            • {prettifyTagName(subCategoryOrFilter)}
+            {prettifyTagName(subCategoryOrFilter)}
           </span>
 
           {parts.slice(2).map((ele) => {
             return (
               <>
+                <span>•</span>
                 <span key={ele} className="capitalize">
-                  • {prettifyTagName(ele)}
+                  {prettifyTagName(ele)}
                 </span>
               </>
             );
@@ -62,8 +65,9 @@ export default function Breadcrumb() {
           {parts.slice(1).map((ele) => {
             return (
               <>
+                <span>•</span>
                 <span key={ele} className="capitalize">
-                  • {prettifyTagName(ele)}
+                  {prettifyTagName(ele)}
                 </span>
               </>
             );
